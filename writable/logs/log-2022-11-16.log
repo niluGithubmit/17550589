@@ -1,0 +1,107 @@
+CRITICAL - 2022-11-16 10:16:19 --> Invalid file: index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('FCPATH\\index.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\Home.php(26): view('index')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 10:26:36 --> Invalid file: pdf_view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pdf_view.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('pdf_view', [], true)
+ 3 APPPATH\Controllers\PdfController.php(12): view('pdf_view')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 20:38:50 --> Class "Dompdf\Dompdf" not found
+in APPPATH\Controllers\PdfController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 21:11:08 --> Undefined property: App\Controllers\PdfController::$load
+in APPPATH\Controllers\PdfController.php on line 12.
+ 1 APPPATH\Controllers\PdfController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PdfController::$load', 'APPPATH\\Controllers\\PdfController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 21:11:57 --> Call to undefined method Dompdf\Dompdf::loadView()
+in APPPATH\Controllers\PdfController.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 21:12:14 --> Call to undefined method Dompdf\Dompdf::load_view()
+in APPPATH\Controllers\PdfController.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 21:12:57 --> include_once(dompdf/dompdf_config.inc.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\PdfController.php on line 11.
+ 1 APPPATH\Controllers\PdfController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include_once(dompdf/dompdf_config.inc.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\PdfController.php', 11)
+ 2 APPPATH\Controllers\PdfController.php(11): include_once()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 21:13:22 --> Call to undefined method Dompdf\Dompdf::loadView()
+in APPPATH\Controllers\PdfController.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 21:15:04 --> Call to undefined method Dompdf\Dompdf::htmlToPDF()
+in APPPATH\Controllers\PdfController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 21:58:40 --> Undefined variable $content
+in APPPATH\Views\pdf_view.php on line 3.
+ 1 APPPATH\Views\pdf_view.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $content', 'APPPATH\\Views\\pdf_view.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\pdf_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('pdf_view', [], true)
+ 5 APPPATH\Controllers\PdfController.php(8): view('pdf_view')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 22:14:16 --> Call to a member function build_tree() on null
+in VENDORPATH\dompdf\dompdf\src\Dompdf.php on line 526.
+ 1 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 2 APPPATH\Controllers\PdfController.php(17): Dompdf\Dompdf->render()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 22:14:43 --> Call to a member function build_tree() on null
+in VENDORPATH\dompdf\dompdf\src\Dompdf.php on line 526.
+ 1 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 2 APPPATH\Controllers\PdfController.php(17): Dompdf\Dompdf->render()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 22:14:48 --> Call to a member function build_tree() on null
+in VENDORPATH\dompdf\dompdf\src\Dompdf.php on line 526.
+ 1 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 2 APPPATH\Controllers\PdfController.php(17): Dompdf\Dompdf->render()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-16 22:37:01 --> syntax error, unexpected variable "$dompdf"
+in APPPATH\Controllers\PdfController.php on line 121.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\PdfController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PdfController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PdfController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PdfController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

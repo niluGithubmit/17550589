@@ -1,0 +1,133 @@
+ERROR - 2022-11-25 21:29:37 --> mysqli_sql_exception: Table 'service_station.rating' doesn't exist in /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT id FROM ...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id FROM ...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id FROM ...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/service/app/Views/service_station.php(192): CodeIgniter\Database\BaseConnection->query('SELECT id FROM ...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/service/system/View/View.php(213): include('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/service/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /Applications/XAMPP/xamppfiles/htdocs/service/system/Common.php(1134): CodeIgniter\View\View->render('service_station', Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/service/app/Controllers/StationController.php(413): view('service_station', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(927): App\Controllers\StationController->service_station()
+#9 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#10 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/service/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-25 21:29:37 --> Call to a member function getResultArray() on bool
+in APPPATH/Views/service_station.php on line 193.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 4 APPPATH/Controllers/StationController.php(413): view('service_station', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-25 21:30:34 --> mysqli_sql_exception: Table 'service_station.rating' doesn't exist in /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT id FROM ...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id FROM ...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id FROM ...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/service/app/Views/service_station.php(192): CodeIgniter\Database\BaseConnection->query('SELECT id FROM ...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/service/system/View/View.php(213): include('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/service/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /Applications/XAMPP/xamppfiles/htdocs/service/system/Common.php(1134): CodeIgniter\View\View->render('service_station', Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/service/app/Controllers/StationController.php(413): view('service_station', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(927): App\Controllers\StationController->service_station()
+#9 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#10 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/service/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-25 21:30:34 --> Call to a member function getResultArray() on bool
+in APPPATH/Views/service_station.php on line 193.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 4 APPPATH/Controllers/StationController.php(413): view('service_station', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-25 21:32:31 --> mysqli_sql_exception: Table 'service_station.rating' doesn't exist in /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT id FROM ...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id FROM ...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id FROM ...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/service/app/Views/service_station.php(192): CodeIgniter\Database\BaseConnection->query('SELECT id FROM ...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/service/system/View/View.php(213): include('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/service/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /Applications/XAMPP/xamppfiles/htdocs/service/system/Common.php(1134): CodeIgniter\View\View->render('service_station', Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/service/app/Controllers/StationController.php(413): view('service_station', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(927): App\Controllers\StationController->service_station()
+#9 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#10 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/service/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-25 21:32:31 --> Call to a member function getResult() on bool
+in APPPATH/Views/service_station.php on line 193.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 4 APPPATH/Controllers/StationController.php(413): view('service_station', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-25 21:36:09 --> mysqli_sql_exception: Table 'service_station.rating' doesn't exist in /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT id FROM ...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id FROM ...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id FROM ...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/service/app/Views/service_station.php(194): CodeIgniter\Database\BaseConnection->query('SELECT id FROM ...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/service/system/View/View.php(213): include('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/service/system/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /Applications/XAMPP/xamppfiles/htdocs/service/system/Common.php(1134): CodeIgniter\View\View->render('service_station', Array, true)
+#7 /Applications/XAMPP/xamppfiles/htdocs/service/app/Controllers/StationController.php(413): view('service_station', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(927): App\Controllers\StationController->service_station()
+#9 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#10 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/service/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-25 21:36:09 --> Call to a member function getResult() on bool
+in APPPATH/Views/service_station.php on line 195.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 4 APPPATH/Controllers/StationController.php(413): view('service_station', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 21:38:55 --> Undefined variable $b
+in APPPATH/Views/service_station.php on line 213.
+ 1 APPPATH/Views/service_station.php(213): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $b', 'APPPATH/Views/service_station.php', 213)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/service_station.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 5 APPPATH/Controllers/StationController.php(413): view('service_station', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 21:38:58 --> Undefined variable $b
+in APPPATH/Views/service_station.php on line 213.
+ 1 APPPATH/Views/service_station.php(213): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $b', 'APPPATH/Views/service_station.php', 213)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/service_station.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 5 APPPATH/Controllers/StationController.php(413): view('service_station', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 22:29:53 --> Undefined array key 0
+in APPPATH/Views/service_station/invoice.php on line 54.
+ 1 APPPATH/Views/service_station/invoice.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Views/service_station/invoice.php', 54)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/service_station/invoice.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station/invoice', [], true)
+ 5 APPPATH/Controllers/CustomerController.php(241): view('service_station/invoice')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\CustomerController->print_invoice()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

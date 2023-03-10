@@ -1,0 +1,54 @@
+CRITICAL - 2022-11-26 00:06:02 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/CustomerController.php on line 89.
+ 1 APPPATH/Controllers/CustomerController.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/CustomerController.php', 89)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\CustomerController->appointments()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 00:06:14 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/CustomerController.php on line 89.
+ 1 APPPATH/Controllers/CustomerController.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/CustomerController.php', 89)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\CustomerController->appointments()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 00:07:44 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/CustomerController.php on line 89.
+ 1 APPPATH/Controllers/CustomerController.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/CustomerController.php', 89)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\CustomerController->appointments()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 00:25:48 --> Undefined array key 0
+in APPPATH/Views/service_station/invoice.php on line 54.
+ 1 APPPATH/Views/service_station/invoice.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Views/service_station/invoice.php', 54)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/service_station/invoice.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station/invoice', [], true)
+ 5 APPPATH/Controllers/CustomerController.php(241): view('service_station/invoice')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\CustomerController->print_invoice()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 00:25:53 --> Undefined array key 0
+in APPPATH/Views/service_station/invoice.php on line 54.
+ 1 APPPATH/Views/service_station/invoice.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Views/service_station/invoice.php', 54)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/service_station/invoice.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station/invoice', [], true)
+ 5 APPPATH/Controllers/CustomerController.php(241): view('service_station/invoice')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\CustomerController->print_invoice()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-26 04:17:13 --> Undefined array key "updated_date"
+in APPPATH/Views/spare_part/index.php on line 221.
+ 1 APPPATH/Views/spare_part/index.php(221): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "updated_date"', 'APPPATH/Views/spare_part/index.php', 221)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/spare_part/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('spare_part/index', [], true)
+ 5 APPPATH/Controllers/SparePartsController.php(65): view('spare_part/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\SparePartsController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SparePartsController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

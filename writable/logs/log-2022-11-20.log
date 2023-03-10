@@ -1,0 +1,290 @@
+CRITICAL - 2022-11-20 00:02:56 --> Undefined array key 0
+in APPPATH\Models\availabilityModel.php on line 31.
+ 1 APPPATH\Models\availabilityModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Models\\availabilityModel.php', 31)
+ 2 APPPATH\Controllers\StationController.php(89): App\Models\availabilityModel->getId('15', 'Monday', '07:00')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->time_slot()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 00:02:57 --> Undefined array key 0
+in APPPATH\Models\availabilityModel.php on line 31.
+ 1 APPPATH\Models\availabilityModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Models\\availabilityModel.php', 31)
+ 2 APPPATH\Controllers\StationController.php(89): App\Models\availabilityModel->getId('15', 'Monday', '07:00')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->time_slot()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 00:03:42 --> Undefined array key 0
+in APPPATH\Models\availabilityModel.php on line 31.
+ 1 APPPATH\Models\availabilityModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Models\\availabilityModel.php', 31)
+ 2 APPPATH\Controllers\StationController.php(89): App\Models\availabilityModel->getId('15', 'Monday', '07:00')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->time_slot()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 00:03:44 --> Undefined array key 0
+in APPPATH\Models\availabilityModel.php on line 31.
+ 1 APPPATH\Models\availabilityModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Models\\availabilityModel.php', 31)
+ 2 APPPATH\Controllers\StationController.php(89): App\Models\availabilityModel->getId('15', 'Tuesday', '07:00')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->time_slot()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 00:03:44 --> Undefined array key 0
+in APPPATH\Models\availabilityModel.php on line 31.
+ 1 APPPATH\Models\availabilityModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Models\\availabilityModel.php', 31)
+ 2 APPPATH\Controllers\StationController.php(89): App\Models\availabilityModel->getId('15', 'Tuesday', '07:30')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->time_slot()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 00:05:38 --> Undefined array key 0
+in APPPATH\Models\availabilityModel.php on line 31.
+ 1 APPPATH\Models\availabilityModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Models\\availabilityModel.php', 31)
+ 2 APPPATH\Controllers\StationController.php(89): App\Models\availabilityModel->getId('15', 'Monday', '07:00')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->time_slot()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 00:06:38 --> Undefined array key 0
+in APPPATH\Models\availabilityModel.php on line 31.
+ 1 APPPATH\Models\availabilityModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Models\\availabilityModel.php', 31)
+ 2 APPPATH\Controllers\StationController.php(89): App\Models\availabilityModel->getId('15', 'Tuesday', '07:00')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->time_slot()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 00:06:54 --> Undefined array key 0
+in APPPATH\Models\availabilityModel.php on line 31.
+ 1 APPPATH\Models\availabilityModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Models\\availabilityModel.php', 31)
+ 2 APPPATH\Controllers\StationController.php(89): App\Models\availabilityModel->getId('15', 'Wednesday', '07:00')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->time_slot()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 00:06:56 --> Undefined array key 0
+in APPPATH\Models\availabilityModel.php on line 31.
+ 1 APPPATH\Models\availabilityModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Models\\availabilityModel.php', 31)
+ 2 APPPATH\Controllers\StationController.php(89): App\Models\availabilityModel->getId('15', 'Tuesday', '07:00')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->time_slot()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 00:06:56 --> Undefined array key 0
+in APPPATH\Models\availabilityModel.php on line 31.
+ 1 APPPATH\Models\availabilityModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Models\\availabilityModel.php', 31)
+ 2 APPPATH\Controllers\StationController.php(89): App\Models\availabilityModel->getId('15', 'Tuesday', '07:00')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->time_slot()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 00:06:57 --> Undefined array key 0
+in APPPATH\Models\availabilityModel.php on line 31.
+ 1 APPPATH\Models\availabilityModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Models\\availabilityModel.php', 31)
+ 2 APPPATH\Controllers\StationController.php(89): App\Models\availabilityModel->getId('15', 'Tuesday', '07:00')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->time_slot()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 00:08:22 --> Undefined array key 0
+in APPPATH\Models\availabilityModel.php on line 31.
+ 1 APPPATH\Models\availabilityModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Models\\availabilityModel.php', 31)
+ 2 APPPATH\Controllers\StationController.php(89): App\Models\availabilityModel->getId('15', 'Monday', '07:00')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->time_slot()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 00:08:25 --> Undefined array key 0
+in APPPATH\Models\availabilityModel.php on line 31.
+ 1 APPPATH\Models\availabilityModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Models\\availabilityModel.php', 31)
+ 2 APPPATH\Controllers\StationController.php(89): App\Models\availabilityModel->getId('15', 'Monday', '07:30')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->time_slot()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 00:15:08 --> Undefined array key 0
+in APPPATH\Models\availabilityModel.php on line 31.
+ 1 APPPATH\Models\availabilityModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Models\\availabilityModel.php', 31)
+ 2 APPPATH\Controllers\StationController.php(89): App\Models\availabilityModel->getId('15', 'Monday', '07:00')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->time_slot()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 00:15:09 --> Undefined array key 0
+in APPPATH\Models\availabilityModel.php on line 31.
+ 1 APPPATH\Models\availabilityModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Models\\availabilityModel.php', 31)
+ 2 APPPATH\Controllers\StationController.php(89): App\Models\availabilityModel->getId('15', 'Monday', '07:30')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->time_slot()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 00:41:02 --> syntax error, unexpected variable "$query"
+in APPPATH\Views\service_station\availability.php on line 89.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/availability', [], true)
+ 3 APPPATH\Controllers\StationController.php(76): view('service_station/availability', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->availability()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 00:41:44 --> Undefined variable $db
+in APPPATH\Views\service_station\availability.php on line 89.
+ 1 APPPATH\Views\service_station\availability.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH\\Views\\service_station\\availability.php', 89)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\availability.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/availability', [], true)
+ 5 APPPATH\Controllers\StationController.php(76): view('service_station/availability', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->availability()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 01:55:06 --> Undefined variable $availabilityModel
+in APPPATH\Controllers\StationController.php on line 124.
+ 1 APPPATH\Controllers\StationController.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $availabilityModel', 'APPPATH\\Controllers\\StationController.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->get_time_slot()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 01:55:16 --> Undefined variable $availabilityModel
+in APPPATH\Controllers\StationController.php on line 124.
+ 1 APPPATH\Controllers\StationController.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $availabilityModel', 'APPPATH\\Controllers\\StationController.php', 124)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->get_time_slot()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 01:56:00 --> Array to string conversion
+in APPPATH\Controllers\StationController.php on line 128.
+ 1 APPPATH\Controllers\StationController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\StationController.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->get_time_slot()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 02:44:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\service_station\edit.php on line 54.
+ 1 APPPATH\Views\admin\service_station\edit.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\service_station\\edit.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\service_station\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/service_station/edit', [], true)
+ 5 APPPATH\Controllers\admin\StationController.php(175): view('admin/service_station/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\admin\StationController->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 02:56:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\components\admin_nav.php on line 69.
+ 1 APPPATH\Views\components\admin_nav.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\components\\admin_nav.php', 69)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\components\\admin_nav.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('App\\Views\\components\\admin_nav', [], true)
+ 5 APPPATH\Views\layouts\admin_layout2.php(46): view('App\\Views\\components\\admin_nav')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\admin_layout2.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/admin_layout2', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/service_station/edit', [], true)
+10 APPPATH\Controllers\admin\StationController.php(175): view('admin/service_station/edit', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\admin\StationController->edit()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\StationController))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 04:34:48 --> Undefined variable $session
+in APPPATH\Views\service_station.php on line 8.
+ 1 APPPATH\Views\service_station.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Views\\service_station.php', 8)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 5 APPPATH\Controllers\StationController.php(236): view('service_station', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 04:36:51 --> Undefined variable $ownerData
+in APPPATH\Views\components\customer_navbar.php on line 9.
+ 1 APPPATH\Views\components\customer_navbar.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ownerData', 'APPPATH\\Views\\components\\customer_navbar.php', 9)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\components\\customer_navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('App\\Views\\components\\customer_navbar', [], true)
+ 5 APPPATH\Views\layouts\customer_layout.php(115): view('App\\Views\\components\\customer_navbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\customer_layout.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/customer_layout', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+10 APPPATH\Controllers\StationController.php(236): view('service_station', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 04:37:28 --> Undefined variable $ownerData
+in APPPATH\Views\components\customer_navbar.php on line 9.
+ 1 APPPATH\Views\components\customer_navbar.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ownerData', 'APPPATH\\Views\\components\\customer_navbar.php', 9)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\components\\customer_navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('App\\Views\\components\\customer_navbar', [], true)
+ 5 APPPATH\Views\layouts\customer_layout.php(115): view('App\\Views\\components\\customer_navbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\customer_layout.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/customer_layout', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+10 APPPATH\Controllers\StationController.php(236): view('service_station', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 04:40:02 --> Undefined variable $ownerData
+in APPPATH\Views\components\customer_navbar.php on line 11.
+ 1 APPPATH\Views\components\customer_navbar.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ownerData', 'APPPATH\\Views\\components\\customer_navbar.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\components\\customer_navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('App\\Views\\components\\customer_navbar', [], true)
+ 5 APPPATH\Views\layouts\customer_layout.php(115): view('App\\Views\\components\\customer_navbar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\customer_layout.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/customer_layout', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+10 APPPATH\Controllers\StationController.php(236): view('service_station', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 04:48:42 --> Undefined variable $service_stationData
+in APPPATH\Views\components\service_station_nav.php on line 11.
+ 1 APPPATH\Views\components\service_station_nav.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $service_stationData', 'APPPATH\\Views\\components\\service_station_nav.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\components\\service_station_nav.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('App\\Views\\components\\service_station_nav', [], true)
+ 5 APPPATH\Views\layouts\service_station_layout.php(125): view('App\\Views\\components\\service_station_nav')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\service_station_layout.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/service_station_layout', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+10 APPPATH\Controllers\StationController.php(236): view('service_station', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 04:49:42 --> Undefined variable $service_stationData
+in APPPATH\Views\components\service_station_nav.php on line 102.
+ 1 APPPATH\Views\components\service_station_nav.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $service_stationData', 'APPPATH\\Views\\components\\service_station_nav.php', 102)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\components\\service_station_nav.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('App\\Views\\components\\service_station_nav', [], true)
+ 5 APPPATH\Views\layouts\service_station_layout.php(125): view('App\\Views\\components\\service_station_nav')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\service_station_layout.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/service_station_layout', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+10 APPPATH\Controllers\StationController.php(236): view('service_station', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 08:19:57 --> Undefined array key "service_stationData"
+in APPPATH\Views\service_station\service_station_details.php on line 209.
+ 1 APPPATH\Views\service_station\service_station_details.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "service_stationData"', 'APPPATH\\Views\\service_station\\service_station_details.php', 209)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\service_station_details.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/service_station_details', [], true)
+ 5 APPPATH\Controllers\StationController.php(599): view('service_station/service_station_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station_details()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,9 @@
+CRITICAL - 2023-01-07 00:53:32 --> syntax error, unexpected token "else"
+in APPPATH/Views/customer/service_history.php on line 235.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('customer/service_history', [], true)
+ 3 APPPATH/Controllers/CustomerController.php(175): view('customer/service_history', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\CustomerController->service_history()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

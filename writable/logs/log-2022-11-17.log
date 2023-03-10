@@ -1,0 +1,1508 @@
+CRITICAL - 2022-11-17 00:40:13 --> Invalid file: test_pdf.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('test_pdf.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('test_pdf', [], true)
+ 3 APPPATH\Controllers\PdfController.php(8): view('test_pdf')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 00:41:29 --> Invalid file: test_pdf.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('test_pdf.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('test_pdf', [], true)
+ 3 APPPATH\Controllers\PdfController.php(8): view('test_pdf')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 00:50:04 --> file_get_contents(pdf_view): Failed to open stream: No such file or directory
+in APPPATH\Controllers\PdfController.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(pdf_view): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\PdfController.php', 12)
+ 2 APPPATH\Controllers\PdfController.php(12): file_get_contents('pdf_view')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 00:50:49 --> file_get_contents(pdf_view.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\PdfController.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(pdf_view.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\PdfController.php', 12)
+ 2 APPPATH\Controllers\PdfController.php(12): file_get_contents('pdf_view.php')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 00:50:50 --> file_get_contents(pdf_view.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\PdfController.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(pdf_view.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\PdfController.php', 12)
+ 2 APPPATH\Controllers\PdfController.php(12): file_get_contents('pdf_view.php')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 00:51:23 --> file_get_contents(&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
+  &lt;title&gt;Codeigniter 4 PDF Example - positronx.io&lt;/title&gt;
+  
+  &lt;style type=&quot;text/css&quot;&gt;
+  	table, th, td {
+  border: 1px solid white;
+  
+}
+th, td {
+  background-color: #eee;
+ 
+
+
+}
+
+th{
+	font-weight: bolder;
+}
+
+.purpose th , .purpose td{
+	padding: 20px;
+	background-color: #eee;
+ 
+}
+
+.branch{
+	border: 1px solid #000;
+	padding-right: 100px;
+	font-weight: bolder;
+}
+.account_no{
+	
+}
+  &lt;/style&gt;
+}
+}
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css&quot;&gt;
+    &lt;a class=&quot;btn btn-success&quot; href=&quot;http://localhost/service_station2/public/PdfController/htmlToPDF&quot;&gt;fff&lt;/a&gt;
+  &lt;div class=&quot;container mt-5&quot;&gt;
+    &lt;h2&gt;Gloabal Service Help Center&lt;/h2&gt;
+    &lt;br&gt;
+
+      &lt;div class=&quot;row&quot;&gt;
+      	&lt;div class=&quot;col-sm-1&quot;&gt;Date:&lt;/div&gt;
+      	&lt;div class=&quot;col-sm-2&quot;&gt;&lt;table&gt;
+      		&lt;tr&gt;
+      			&lt;td&gt;D&lt;/td&gt;
+      			&lt;td&gt;D&lt;/td&gt;
+      			&lt;td&gt;M&lt;/td&gt;
+      			&lt;td&gt;M&lt;/td&gt;
+      			&lt;td&gt;Y&lt;/td&gt;
+      			&lt;td&gt;Y&lt;/td&gt;
+      			&lt;td&gt;Y&lt;/td&gt;
+      			&lt;td&gt;Y&lt;/td&gt;
+      		&lt;/tr&gt;
+      		&lt;tr&gt;
+      			&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+      			&lt;td&gt;&lt;/td&gt;
+      			&lt;td&gt;&lt;/td&gt;
+      			&lt;td&gt;&lt;/td&gt;
+      			&lt;td&gt;&lt;/td&gt;
+      			&lt;td&gt;&lt;/td&gt;
+      			&lt;td&gt;&lt;/td&gt;
+      			&lt;td&gt;&lt;/td&gt;
+      		&lt;/tr&gt;
+      	&lt;/table&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-5 branch&quot;&gt;Paid at People’s Bank &lt;br&gt;
+      Branch &lt;/div&gt;
+      &lt;div class=&quot;col-sm-1&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 branch&quot;&gt;Paid Bank &lt;br&gt; Branch
+		Code:&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;br&gt;
+      &lt;div class=&quot;row&quot;&gt;
+      	&lt;div class=&quot;col-md-12&quot;&gt;
+      		&lt;table class=&quot;purpose&quot;&gt;
+      			&lt;tr&gt;
+      				&lt;th&gt;user id&lt;/th&gt;
+      				&lt;th&gt;user name&lt;/th&gt;
+      				&lt;th&gt;subcription plan&lt;/th&gt;
+      				&lt;th&gt;subcription date&lt;/th&gt;
+      			&lt;/tr&gt;
+      			&lt;tr&gt;
+      				&lt;td&gt;1&lt;/td&gt;
+      				&lt;td&gt;Dilum Thilanka&lt;/td&gt;
+      				&lt;td&gt;Standed&lt;/td&gt;
+      				&lt;td&gt;2022.06.22&lt;/td&gt;
+      			&lt;/tr&gt;
+      		&lt;/table&gt;
+      	&lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;row&quot;&gt;
+      	&lt;p&gt;PAID IN CREDIT OF:&lt;br&gt;
+&lt;span class=&quot;account_no&quot;&gt;GLOBAL SERVICE HELP CENTER - AC No. 086-1001-111-89667&lt;/span&gt;&lt;/p&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+    
+ 
+&lt;/body&gt;
+&lt;/html&gt;): Failed to open stream: Invalid argument
+in APPPATH\Controllers\PdfController.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;
+  &lt;title&gt;Codeigniter 4 PDF Example - positronx.io&lt;/title&gt;
+  
+  &lt;style type=&quot;text/css&quot;&gt;
+  	table, th, td {
+  border: 1px solid white;
+  
+}
+th, td {
+  background-color: #eee;
+ 
+
+
+}
+
+th{
+	font-weight: bolder;
+}
+
+.purpose th , .purpose td{
+	padding: 20px;
+	background-color: #eee;
+ 
+}
+
+.branch{
+	border: 1px solid #000;
+	padding-right: 100px;
+	font-weight: bolder;
+}
+.account_no{
+	
+}
+  &lt;/style&gt;
+}
+}
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css&quot;&gt;
+    &lt;a class=&quot;btn btn-success&quot; href=&quot;http://localhost/service_station2/public/PdfController/htmlToPDF&quot;&gt;fff&lt;/a&gt;
+  &lt;div class=&quot;container mt-5&quot;&gt;
+    &lt;h2&gt;Gloabal Service Help Center&lt;/h2&gt;
+    &lt;br&gt;
+
+      &lt;div class=&quot;row&quot;&gt;
+      	&lt;div class=&quot;col-sm-1&quot;&gt;Date:&lt;/div&gt;
+      	&lt;div class=&quot;col-sm-2&quot;&gt;&lt;table&gt;
+      		&lt;tr&gt;
+      			&lt;td&gt;D&lt;/td&gt;
+      			&lt;td&gt;D&lt;/td&gt;
+      			&lt;td&gt;M&lt;/td&gt;
+      			&lt;td&gt;M&lt;/td&gt;
+      			&lt;td&gt;Y&lt;/td&gt;
+      			&lt;td&gt;Y&lt;/td&gt;
+      			&lt;td&gt;Y&lt;/td&gt;
+      			&lt;td&gt;Y&lt;/td&gt;
+      		&lt;/tr&gt;
+      		&lt;tr&gt;
+      			&lt;td&gt;&amp;nbsp;&lt;/td&gt;
+      			&lt;td&gt;&lt;/td&gt;
+      			&lt;td&gt;&lt;/td&gt;
+      			&lt;td&gt;&lt;/td&gt;
+      			&lt;td&gt;&lt;/td&gt;
+      			&lt;td&gt;&lt;/td&gt;
+      			&lt;td&gt;&lt;/td&gt;
+      			&lt;td&gt;&lt;/td&gt;
+      		&lt;/tr&gt;
+      	&lt;/table&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-5 branch&quot;&gt;Paid at People’s Bank &lt;br&gt;
+      Branch &lt;/div&gt;
+      &lt;div class=&quot;col-sm-1&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;col-sm-3 branch&quot;&gt;Paid Bank &lt;br&gt; Branch
+		Code:&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;br&gt;
+      &lt;div class=&quot;row&quot;&gt;
+      	&lt;div class=&quot;col-md-12&quot;&gt;
+      		&lt;table class=&quot;purpose&quot;&gt;
+      			&lt;tr&gt;
+      				&lt;th&gt;user id&lt;/th&gt;
+      				&lt;th&gt;user name&lt;/th&gt;
+      				&lt;th&gt;subcription plan&lt;/th&gt;
+      				&lt;th&gt;subcription date&lt;/th&gt;
+      			&lt;/tr&gt;
+      			&lt;tr&gt;
+      				&lt;td&gt;1&lt;/td&gt;
+      				&lt;td&gt;Dilum Thilanka&lt;/td&gt;
+      				&lt;td&gt;Standed&lt;/td&gt;
+      				&lt;td&gt;2022.06.22&lt;/td&gt;
+      			&lt;/tr&gt;
+      		&lt;/table&gt;
+      	&lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;row&quot;&gt;
+      	&lt;p&gt;PAID IN CREDIT OF:&lt;br&gt;
+&lt;span class=&quot;account_no&quot;&gt;GLOBAL SERVICE HELP CENTER - AC No. 086-1001-111-89667&lt;/span&gt;&lt;/p&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+    
+ 
+&lt;/body&gt;
+&lt;/html&gt;): Failed to open stream: Invalid argument', 'APPPATH\\Controllers\\PdfController.php', 12)
+ 2 APPPATH\Controllers\PdfController.php(12): file_get_contents('<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Codeigniter 4 PDF Example - positronx.io</title>
+  
+  <style type="text/css">
+  	table, th, td {
+  border: 1px solid white;
+  
+}
+th, td {
+  background-color: #eee;
+ 
+
+
+}
+
+th{
+	font-weight: bolder;
+}
+
+.purpose th , .purpose td{
+	padding: 20px;
+	background-color: #eee;
+ 
+}
+
+.branch{
+	border: 1px solid #000;
+	padding-right: 100px;
+	font-weight: bolder;
+}
+.account_no{
+	
+}
+  </style>
+}
+}
+</head>
+<body>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <a class="btn btn-success" href="http://localhost/service_station2/public/PdfController/htmlToPDF">fff</a>
+  <div class="container mt-5">
+    <h2>Gloabal Service Help Center</h2>
+    <br>
+
+      <div class="row">
+      	<div class="col-sm-1">Date:</div>
+      	<div class="col-sm-2"><table>
+      		<tr>
+      			<td>D</td>
+      			<td>D</td>
+      			<td>M</td>
+      			<td>M</td>
+      			<td>Y</td>
+      			<td>Y</td>
+      			<td>Y</td>
+      			<td>Y</td>
+      		</tr>
+      		<tr>
+      			<td>&nbsp;</td>
+      			<td></td>
+      			<td></td>
+      			<td></td>
+      			<td></td>
+      			<td></td>
+      			<td></td>
+      			<td></td>
+      		</tr>
+      	</table>
+      </div>
+      <div class="col-sm-5 branch">Paid at People’s Bank <br>
+      Branch </div>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-3 branch">Paid Bank <br> Branch
+		Code:</div>
+      </div>
+      <br>
+      <div class="row">
+      	<div class="col-md-12">
+      		<table class="purpose">
+      			<tr>
+      				<th>user id</th>
+      				<th>user name</th>
+      				<th>subcription plan</th>
+      				<th>subcription date</th>
+      			</tr>
+      			<tr>
+      				<td>1</td>
+      				<td>Dilum Thilanka</td>
+      				<td>Standed</td>
+      				<td>2022.06.22</td>
+      			</tr>
+      		</table>
+      	</div>
+      </div>
+
+      <div class="row">
+      	<p>PAID IN CREDIT OF:<br>
+<span class="account_no">GLOBAL SERVICE HELP CENTER - AC No. 086-1001-111-89667</span></p>
+      </div>
+
+    </div>
+    
+ 
+</body>
+</html>')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 00:52:15 --> file_get_contents(test_pdf.html): Failed to open stream: No such file or directory
+in APPPATH\Controllers\PdfController.php on line 12.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(test_pdf.html): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\PdfController.php', 12)
+ 2 APPPATH\Controllers\PdfController.php(12): file_get_contents('test_pdf.html')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 01:34:36 --> syntax error, unexpected token ";"
+in APPPATH\Views\pdf_view.php on line 41.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('pdf_view', [], true)
+ 3 APPPATH\Controllers\PdfController.php(14): view('pdf_view')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 02:21:11 --> Call to undefined method Dompdf\Dompdf::renderAs()
+in APPPATH\Controllers\PdfController.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 02:25:47 --> Class "Mpdf\Mpdf" not found
+in APPPATH\Controllers\PdfController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 02:28:13 --> require_once(C:\xampp\htdocs\service_station2\app\Controllers/vendor/autoload.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\PdfController.php on line 4.
+ 1 APPPATH\Controllers\PdfController.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\xampp\\htdocs\\service_station2\\app\\Controllers/vendor/autoload.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\PdfController.php', 4)
+ 2 APPPATH\Controllers\PdfController.php(4): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once('APPPATH\\Controllers\\PdfController.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\PdfController.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PdfController')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PdfController')
+ 7 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PdfController', true)
+ 8 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 02:28:47 --> require_once(C:\xampp\htdocs\service_station2\app\Controllers/pdf/autoload.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\PdfController.php on line 4.
+ 1 APPPATH\Controllers\PdfController.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\xampp\\htdocs\\service_station2\\app\\Controllers/pdf/autoload.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\PdfController.php', 4)
+ 2 APPPATH\Controllers\PdfController.php(4): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once('APPPATH\\Controllers\\PdfController.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\PdfController.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PdfController')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PdfController')
+ 7 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PdfController', true)
+ 8 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 02:29:25 --> Class "App\Controllers\mPDF" not found
+in APPPATH\Controllers\PdfController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 02:30:27 --> Class "Mpdf\Mpdf" not found
+in APPPATH\Controllers\PdfController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 02:31:33 --> Class "Mpdf\Mpdf" not found
+in APPPATH\Controllers\PdfController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 02:31:34 --> Class "Mpdf\Mpdf" not found
+in APPPATH\Controllers\PdfController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 02:32:19 --> Class "App\Controllers\mPDF" not found
+in APPPATH\Controllers\PdfController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 02:32:58 --> Array and string offset access syntax with curly braces is no longer supported
+in VENDORPATH\mpdf\mpdf\mpdf.php on line 2349.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 02:34:17 --> Array and string offset access syntax with curly braces is no longer supported
+in VENDORPATH\mpdf\mpdf\mpdf.php on line 2349.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 02:34:20 --> Array and string offset access syntax with curly braces is no longer supported
+in VENDORPATH\mpdf\mpdf\mpdf.php on line 2349.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 02:34:43 --> Class "MPDF\MPDF" not found
+in APPPATH\Controllers\PdfController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 02:35:33 --> Class "Mpdf\Mpdf" not found
+in APPPATH\Controllers\PdfController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 02:38:41 --> Class "Mpdf\Mpdf" not found
+in APPPATH\Controllers\PdfController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 02:38:42 --> Class "Mpdf\Mpdf" not found
+in APPPATH\Controllers\PdfController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 02:40:36 --> Class "Mpdf\Mpdf" not found
+in APPPATH\Controllers\PdfController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 02:40:37 --> Class "Mpdf\Mpdf" not found
+in APPPATH\Controllers\PdfController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 02:40:38 --> Class "Mpdf\Mpdf" not found
+in APPPATH\Controllers\PdfController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 02:40:38 --> Class "Mpdf\Mpdf" not found
+in APPPATH\Controllers\PdfController.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 02:41:35 --> include(mpdf.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\PdfController.php on line 25.
+ 1 APPPATH\Controllers\PdfController.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(mpdf.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\PdfController.php', 25)
+ 2 APPPATH\Controllers\PdfController.php(25): include()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 02:52:02 --> include(cart_print.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\PdfController.php on line 13.
+ 1 APPPATH\Controllers\PdfController.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(cart_print.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\PdfController.php', 13)
+ 2 APPPATH\Controllers\PdfController.php(13): include()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 02:52:56 --> include(pdf_view.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\PdfController.php on line 13.
+ 1 APPPATH\Controllers\PdfController.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(pdf_view.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\PdfController.php', 13)
+ 2 APPPATH\Controllers\PdfController.php(13): include()
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 02:54:05 --> ob_get_contents() expects exactly 0 arguments, 1 given
+in APPPATH\Controllers\PdfController.php on line 15.
+ 1 APPPATH\Controllers\PdfController.php(15): ob_get_contents('pdf_view')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 03:04:16 --> file_get_contents(pdf_view.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\PdfController.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(pdf_view.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\PdfController.php', 16)
+ 2 APPPATH\Controllers\PdfController.php(16): file_get_contents('pdf_view.php')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->htmlToPDF()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 03:05:11 --> require_once(dompdf/lib/html5lib/Parser.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\PdfController.php on line 4.
+ 1 APPPATH\Controllers\PdfController.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(dompdf/lib/html5lib/Parser.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\PdfController.php', 4)
+ 2 APPPATH\Controllers\PdfController.php(4): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once('APPPATH\\Controllers\\PdfController.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\PdfController.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PdfController')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PdfController')
+ 7 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PdfController', true)
+ 8 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 03:05:12 --> require_once(dompdf/lib/html5lib/Parser.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\PdfController.php on line 4.
+ 1 APPPATH\Controllers\PdfController.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(dompdf/lib/html5lib/Parser.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\PdfController.php', 4)
+ 2 APPPATH\Controllers\PdfController.php(4): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once('APPPATH\\Controllers\\PdfController.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\PdfController.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PdfController')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PdfController')
+ 7 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PdfController', true)
+ 8 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 03:05:34 --> require_once(dompdf/lib/html5lib/Parser.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\PdfController.php on line 4.
+ 1 APPPATH\Controllers\PdfController.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(dompdf/lib/html5lib/Parser.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\PdfController.php', 4)
+ 2 APPPATH\Controllers\PdfController.php(4): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once('APPPATH\\Controllers\\PdfController.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\PdfController.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PdfController')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PdfController')
+ 7 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PdfController', true)
+ 8 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 03:05:58 --> require_once(dompdf/lib/html5lib/Parser.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\PdfController.php on line 4.
+ 1 APPPATH\Controllers\PdfController.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(dompdf/lib/html5lib/Parser.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\PdfController.php', 4)
+ 2 APPPATH\Controllers\PdfController.php(4): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(282): include_once('APPPATH\\Controllers\\PdfController.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\PdfController.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PdfController')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PdfController')
+ 7 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PdfController', true)
+ 8 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 05:08:00 --> Undefined property: CodeIgniter\View\View::$uri
+in APPPATH\Views\bank_slip.php on line 27.
+ 1 APPPATH\Views\bank_slip.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$uri', 'APPPATH\\Views\\bank_slip.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\bank_slip.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('bank_slip', [], true)
+ 5 APPPATH\Controllers\PdfController.php(17): view('bank_slip')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->bank_slip()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 05:08:37 --> Undefined property: CodeIgniter\View\View::$uri
+in APPPATH\Views\bank_slip.php on line 27.
+ 1 APPPATH\Views\bank_slip.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$uri', 'APPPATH\\Views\\bank_slip.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\bank_slip.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('bank_slip', [], true)
+ 5 APPPATH\Controllers\PdfController.php(17): view('bank_slip')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->bank_slip()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 05:08:38 --> Undefined property: CodeIgniter\View\View::$uri
+in APPPATH\Views\bank_slip.php on line 27.
+ 1 APPPATH\Views\bank_slip.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$uri', 'APPPATH\\Views\\bank_slip.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\bank_slip.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('bank_slip', [], true)
+ 5 APPPATH\Controllers\PdfController.php(17): view('bank_slip')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->bank_slip()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 05:10:12 --> Undefined property: CodeIgniter\View\View::$request
+in APPPATH\Views\bank_slip.php on line 28.
+ 1 APPPATH\Views\bank_slip.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$request', 'APPPATH\\Views\\bank_slip.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\bank_slip.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('bank_slip', [], true)
+ 5 APPPATH\Controllers\PdfController.php(17): view('bank_slip')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->bank_slip()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 05:10:53 --> Undefined property: CodeIgniter\View\View::$uri
+in APPPATH\Views\bank_slip.php on line 29.
+ 1 APPPATH\Views\bank_slip.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$uri', 'APPPATH\\Views\\bank_slip.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\bank_slip.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('bank_slip', [], true)
+ 5 APPPATH\Controllers\PdfController.php(17): view('bank_slip')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->bank_slip()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 05:14:49 --> syntax error, unexpected variable "$result"
+in APPPATH\Views\bank_slip.php on line 35.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('bank_slip', [], true)
+ 3 APPPATH\Controllers\PdfController.php(17): view('bank_slip')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->bank_slip()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 05:15:13 --> syntax error, unexpected variable "$result"
+in APPPATH\Views\bank_slip.php on line 35.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('bank_slip', [], true)
+ 3 APPPATH\Controllers\PdfController.php(17): view('bank_slip')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->bank_slip()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 05:15:35 --> syntax error, unexpected variable "$result"
+in APPPATH\Views\bank_slip.php on line 35.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('bank_slip', [], true)
+ 3 APPPATH\Controllers\PdfController.php(17): view('bank_slip')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->bank_slip()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 05:15:44 --> syntax error, unexpected variable "$result"
+in APPPATH\Views\bank_slip.php on line 35.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('bank_slip', [], true)
+ 3 APPPATH\Controllers\PdfController.php(17): view('bank_slip')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->bank_slip()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 05:30:28 --> Undefined array key "id"
+in APPPATH\Views\service_station\subscription_payment.php on line 39.
+ 1 APPPATH\Views\service_station\subscription_payment.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\service_station\\subscription_payment.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\subscription_payment.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/subscription_payment.php', [], true)
+ 5 APPPATH\Controllers\StationController.php(345): view('service_station/subscription_payment.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->subscription_payment()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 05:30:35 --> Undefined array key "id"
+in APPPATH\Views\service_station\subscription_payment.php on line 39.
+ 1 APPPATH\Views\service_station\subscription_payment.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\service_station\\subscription_payment.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\subscription_payment.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/subscription_payment.php', [], true)
+ 5 APPPATH\Controllers\StationController.php(345): view('service_station/subscription_payment.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->subscription_payment()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 05:31:24 --> Undefined array key "id"
+in APPPATH\Views\service_station\subscription_payment.php on line 39.
+ 1 APPPATH\Views\service_station\subscription_payment.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\service_station\\subscription_payment.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\subscription_payment.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/subscription_payment.php', [], true)
+ 5 APPPATH\Controllers\StationController.php(345): view('service_station/subscription_payment.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->subscription_payment()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 05:31:26 --> Undefined array key "id"
+in APPPATH\Views\service_station\subscription_payment.php on line 39.
+ 1 APPPATH\Views\service_station\subscription_payment.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\service_station\\subscription_payment.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\subscription_payment.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/subscription_payment.php', [], true)
+ 5 APPPATH\Controllers\StationController.php(345): view('service_station/subscription_payment.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->subscription_payment()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 05:32:55 --> Undefined array key "id"
+in APPPATH\Views\service_station\subscription_payment.php on line 39.
+ 1 APPPATH\Views\service_station\subscription_payment.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\service_station\\subscription_payment.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\subscription_payment.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/subscription_payment.php', [], true)
+ 5 APPPATH\Controllers\StationController.php(345): view('service_station/subscription_payment.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->subscription_payment()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 05:34:42 --> Undefined array key "id"
+in APPPATH\Views\service_station\subscription_payment.php on line 39.
+ 1 APPPATH\Views\service_station\subscription_payment.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\service_station\\subscription_payment.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\subscription_payment.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/subscription_payment.php', [], true)
+ 5 APPPATH\Controllers\StationController.php(345): view('service_station/subscription_payment.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->subscription_payment()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 06:25:52 --> Class "App\Models\subcription_payments" not found
+in APPPATH\Controllers\StationController.php on line 421.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 06:28:12 --> Class "App\Models\subcription_payments" not found
+in APPPATH\Controllers\StationController.php on line 421.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 06:29:16 --> Constant expression contains invalid operations
+in APPPATH\Models\subcription_paymentsModel.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 06:29:25 --> Constant expression contains invalid operations
+in APPPATH\Models\subcription_paymentsModel.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 06:29:35 --> Constant expression contains invalid operations
+in APPPATH\Models\subcription_paymentsModel.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 06:32:13 --> Constant expression contains invalid operations
+in APPPATH\Models\subcription_paymentsModel.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 06:32:25 --> Constant expression contains invalid operations
+in APPPATH\Models\subcription_paymentsModel.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 06:33:36 --> Constant expression contains invalid operations
+in APPPATH\Models\subcription_paymentsModel.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 06:34:01 --> Constant expression contains invalid operations
+in APPPATH\Models\subcription_paymentsModel.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 06:34:05 --> Constant expression contains invalid operations
+in APPPATH\Models\subcription_paymentsModel.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 06:34:15 --> Constant expression contains invalid operations
+in APPPATH\Models\subcription_paymentsModel.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 06:37:56 --> Constant expression contains invalid operations
+in APPPATH\Models\subscription_paymentsModel.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 06:38:07 --> Constant expression contains invalid operations
+in APPPATH\Models\subscription_paymentsModel.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 06:40:30 --> Constant expression contains invalid operations
+in APPPATH\Models\subscription_paymentsModel.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 06:43:53 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 729.
+ 1 SYSTEMPATH\BaseModel.php(729): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\StationController.php(434): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 06:45:25 --> Constant expression contains invalid operations
+in APPPATH\Models\subscription_paymentsModel.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 06:45:33 --> Constant expression contains invalid operations
+in APPPATH\Models\subscription_paymentsModel.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 06:47:15 --> Constant expression contains invalid operations
+in APPPATH\Models\subscription_paymentsModel.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 06:48:40 --> Constant expression contains invalid operations
+in APPPATH\Models\subscription_paymentsModel.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 06:48:58 --> Constant expression contains invalid operations
+in APPPATH\Models\subscription_paymentsModel.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 06:49:39 --> Constant expression contains invalid operations
+in APPPATH\Models\subscription_paymentsModel.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 06:49:41 --> Constant expression contains invalid operations
+in APPPATH\Models\subscription_paymentsModel.php on line 14.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-17 07:01:26 --> Call to a member function hasMoved() on null
+in APPPATH\Controllers\StationController.php on line 436.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 07:03:26 --> Call to a member function move() on null
+in APPPATH\Controllers\StationController.php on line 435.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-17 07:03:43 --> mysqli_sql_exception: Column 'bank_slip' cannot be null in C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\xampp\htdocs\service_station2\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\service_station2\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\service_station2\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\service_station2\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\service_station2\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\service_station2\app\Controllers\StationController.php(437): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+#10 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#11 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\service_station2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-17 07:03:43 --> Column 'bank_slip' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (\'15\', \'1\', 0, \'2022-11-18\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (\'15\', \'1\', 0, \'2022-11-18\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (\'15\', \'1\', 0, \'2022-11-18\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (:station_id:, :subscription_id:, :status:, :payment_date:, :bank_slip:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\StationController.php(437): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-17 07:03:51 --> mysqli_sql_exception: Column 'bank_slip' cannot be null in C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\xampp\htdocs\service_station2\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\service_station2\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\service_station2\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\service_station2\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\service_station2\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\service_station2\app\Controllers\StationController.php(437): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+#10 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#11 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\service_station2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-17 07:03:51 --> Column 'bank_slip' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (\'15\', \'1\', 0, \'2022-11-18\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (\'15\', \'1\', 0, \'2022-11-18\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (\'15\', \'1\', 0, \'2022-11-18\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (:station_id:, :subscription_id:, :status:, :payment_date:, :bank_slip:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\StationController.php(437): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 07:04:41 --> Call to a member function move() on null
+in APPPATH\Controllers\StationController.php on line 435.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 07:06:10 --> Call to a member function move() on null
+in APPPATH\Controllers\StationController.php on line 435.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 07:06:21 --> Call to a member function move() on null
+in APPPATH\Controllers\StationController.php on line 435.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 07:07:57 --> Call to a member function move() on null
+in APPPATH\Controllers\StationController.php on line 435.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 07:07:59 --> Call to a member function move() on null
+in APPPATH\Controllers\StationController.php on line 435.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 07:08:00 --> Call to a member function move() on null
+in APPPATH\Controllers\StationController.php on line 435.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 07:10:21 --> Call to a member function move() on null
+in APPPATH\Controllers\StationController.php on line 435.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 07:11:49 --> Call to a member function move() on null
+in APPPATH\Controllers\StationController.php on line 451.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 07:13:46 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\StationController.php on line 451.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 07:13:47 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\StationController.php on line 451.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 07:16:39 --> syntax error, unexpected variable "$newName"
+in APPPATH\Controllers\StationController.php on line 452.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\StationController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\StationController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\StationController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\StationController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 07:21:53 --> Array to string conversion
+in APPPATH\Controllers\StationController.php on line 474.
+ 1 APPPATH\Controllers\StationController.php(474): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\StationController.php', 474)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 07:22:33 --> syntax error, unexpected token "echo"
+in APPPATH\Controllers\StationController.php on line 474.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\StationController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\StationController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\StationController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\StationController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 07:27:50 --> Call to a member function getSize() on null
+in APPPATH\Controllers\StationController.php on line 442.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 07:28:26 --> Undefined array key "slip"
+in APPPATH\Controllers\StationController.php on line 441.
+ 1 APPPATH\Controllers\StationController.php(441): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "slip"', 'APPPATH\\Controllers\\StationController.php', 441)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 07:28:50 --> Undefined array key "slip"
+in APPPATH\Controllers\StationController.php on line 441.
+ 1 APPPATH\Controllers\StationController.php(441): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "slip"', 'APPPATH\\Controllers\\StationController.php', 441)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 08:36:37 --> Undefined array key "slip"
+in APPPATH\Controllers\StationController.php on line 441.
+ 1 APPPATH\Controllers\StationController.php(441): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "slip"', 'APPPATH\\Controllers\\StationController.php', 441)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 08:40:45 --> Call to a member function getSize() on array
+in APPPATH\Controllers\StationController.php on line 442.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-17 08:42:22 --> mysqli_sql_exception: Column 'bank_slip' cannot be null in C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\xampp\htdocs\service_station2\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\service_station2\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\service_station2\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\service_station2\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\service_station2\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\service_station2\app\Controllers\StationController.php(440): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+#10 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#11 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\service_station2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-17 08:42:22 --> Column 'bank_slip' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (\'15\', \'1\', 0, \'2022-11-25\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (\'15\', \'1\', 0, \'2022-11-25\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (\'15\', \'1\', 0, \'2022-11-25\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (:station_id:, :subscription_id:, :status:, :payment_date:, :bank_slip:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\StationController.php(440): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-17 08:44:05 --> mysqli_sql_exception: Column 'bank_slip' cannot be null in C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\xampp\htdocs\service_station2\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\service_station2\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\service_station2\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\service_station2\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\service_station2\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\service_station2\app\Controllers\StationController.php(441): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+#10 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#11 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\service_station2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-17 08:44:05 --> Column 'bank_slip' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (\'15\', \'1\', 0, \'2022-11-25\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (\'15\', \'1\', 0, \'2022-11-25\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (\'15\', \'1\', 0, \'2022-11-25\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (:station_id:, :subscription_id:, :status:, :payment_date:, :bank_slip:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\StationController.php(441): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-17 08:44:18 --> mysqli_sql_exception: Column 'bank_slip' cannot be null in C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\xampp\htdocs\service_station2\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\service_station2\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\service_station2\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\service_station2\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\service_station2\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\service_station2\app\Controllers\StationController.php(441): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+#10 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#11 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\service_station2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-17 08:44:18 --> Column 'bank_slip' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (\'15\', \'1\', 0, \'2022-11-25\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (\'15\', \'1\', 0, \'2022-11-25\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (\'15\', \'1\', 0, \'2022-11-25\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (:station_id:, :subscription_id:, :status:, :payment_date:, :bank_slip:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\StationController.php(441): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-17 08:44:40 --> mysqli_sql_exception: Column 'bank_slip' cannot be null in C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\xampp\htdocs\service_station2\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\service_station2\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\service_station2\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\service_station2\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\service_station2\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\service_station2\app\Controllers\StationController.php(441): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+#10 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#11 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\service_station2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-17 08:44:40 --> Column 'bank_slip' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (\'15\', \'1\', 0, \'2022-11-25\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (\'15\', \'1\', 0, \'2022-11-25\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (\'15\', \'1\', 0, \'2022-11-25\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (:station_id:, :subscription_id:, :status:, :payment_date:, :bank_slip:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\StationController.php(441): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-17 08:45:35 --> mysqli_sql_exception: Column 'bank_slip' cannot be null in C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\xampp\htdocs\service_station2\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\service_station2\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\service_station2\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\service_station2\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\service_station2\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\service_station2\app\Controllers\StationController.php(441): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+#10 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#11 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\service_station2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-17 08:45:35 --> Column 'bank_slip' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (\'15\', \'1\', 0, \'2022-11-25\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (\'15\', \'1\', 0, \'2022-11-25\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (\'15\', \'1\', 0, \'2022-11-25\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `subscription_payments` (`station_id`, `subscription_id`, `status`, `payment_date`, `bank_slip`) VALUES (:station_id:, :subscription_id:, :status:, :payment_date:, :bank_slip:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\StationController.php(441): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 09:14:02 --> syntax error, unexpected token "return"
+in APPPATH\Controllers\StationController.php on line 459.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\StationController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\StationController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\StationController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\StationController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 09:25:26 --> syntax error, unexpected token "<"
+in APPPATH\Views\service_station.php on line 51.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 3 APPPATH\Controllers\StationController.php(159): view('service_station', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 09:25:34 --> syntax error, unexpected token "<"
+in APPPATH\Views\service_station.php on line 51.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 3 APPPATH\Controllers\StationController.php(159): view('service_station', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 09:41:20 --> Undefined variable $users
+in APPPATH\Controllers\admin\StationController.php on line 163.
+ 1 APPPATH\Controllers\admin\StationController.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'APPPATH\\Controllers\\admin\\StationController.php', 163)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\admin\StationController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 09:41:33 --> Undefined variable $users
+in APPPATH\Controllers\admin\StationController.php on line 163.
+ 1 APPPATH\Controllers\admin\StationController.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $users', 'APPPATH\\Controllers\\admin\\StationController.php', 163)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\admin\StationController->edit()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 09:42:04 --> Invalid file: admin/service_station/edit.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/service_station/edit.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/service_station/edit', [], true)
+ 3 APPPATH\Controllers\admin\StationController.php(169): view('admin/service_station/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\admin\StationController->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\StationController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 09:43:03 --> Invalid file: admin/service_station/edit.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/service_station/edit.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/service_station/edit', [], true)
+ 3 APPPATH\Controllers\admin\StationController.php(169): view('admin/service_station/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\admin\StationController->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\StationController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 09:55:21 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Views\admin\service_station\edit.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/service_station/edit', [], true)
+ 3 APPPATH\Controllers\admin\StationController.php(169): view('admin/service_station/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\admin\StationController->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\StationController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 10:17:01 --> Undefined array key "id"
+in APPPATH\Views\admin\service_station\edit.php on line 63.
+ 1 APPPATH\Views\admin\service_station\edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\admin\\service_station\\edit.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\service_station\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/service_station/edit', [], true)
+ 5 APPPATH\Controllers\admin\StationController.php(175): view('admin/service_station/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\admin\StationController->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 10:17:06 --> Undefined array key "id"
+in APPPATH\Views\admin\service_station\edit.php on line 63.
+ 1 APPPATH\Views\admin\service_station\edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\admin\\service_station\\edit.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\service_station\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/service_station/edit', [], true)
+ 5 APPPATH\Controllers\admin\StationController.php(175): view('admin/service_station/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\admin\StationController->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 10:17:30 --> Undefined array key "id"
+in APPPATH\Views\admin\service_station\edit.php on line 63.
+ 1 APPPATH\Views\admin\service_station\edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\admin\\service_station\\edit.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\service_station\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/service_station/edit', [], true)
+ 5 APPPATH\Controllers\admin\StationController.php(175): view('admin/service_station/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\admin\StationController->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 10:17:31 --> Undefined array key "id"
+in APPPATH\Views\admin\service_station\edit.php on line 63.
+ 1 APPPATH\Views\admin\service_station\edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\admin\\service_station\\edit.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\service_station\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/service_station/edit', [], true)
+ 5 APPPATH\Controllers\admin\StationController.php(175): view('admin/service_station/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\admin\StationController->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-17 10:21:12 --> mysqli_sql_exception: Column 'activation' cannot be null in C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `se...', 0)
+#1 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\xampp\htdocs\service_station2\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\xampp\htdocs\service_station2\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\service_station2\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\service_station2\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\service_station2\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\service_station2\app\Controllers\admin\StationController.php(189): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(927): App\Controllers\admin\StationController->update()
+#10 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\StationController))
+#11 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\service_station2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-17 10:21:12 --> Column 'activation' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `service_stations` (`station_id`, `activation`, `exp_date`, `created_at`, `updated_at`) VALUES (NULL, NULL, \'2022-12-30\', \'2022-11-17 10:21:12\', \'2022-11-17 10:21:12\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `service_stations` (`station_id`, `activation`, `exp_date`, `created_at`, `updated_at`) VALUES (NULL, NULL, \'2022-12-30\', \'2022-11-17 10:21:12\', \'2022-11-17 10:21:12\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `service_stations` (`station_id`, `activation`, `exp_date`, `created_at`, `updated_at`) VALUES (NULL, NULL, \'2022-12-30\', \'2022-11-17 10:21:12\', \'2022-11-17 10:21:12\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `service_stations` (`station_id`, `activation`, `exp_date`, `created_at`, `updated_at`) VALUES (:station_id:, :activation:, :exp_date:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\admin\StationController.php(189): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\admin\StationController->update()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\StationController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 10:27:41 --> syntax error, unexpected token ","
+in APPPATH\Controllers\admin\StationController.php on line 183.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\admin\\StationController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\admin\\StationController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\admin\\StationController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\admin\\StationController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 10:27:57 --> syntax error, unexpected token ","
+in APPPATH\Controllers\admin\StationController.php on line 183.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\admin\\StationController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\admin\\StationController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\admin\\StationController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\admin\\StationController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 10:28:16 --> syntax error, unexpected token ","
+in APPPATH\Controllers\admin\StationController.php on line 183.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\admin\\StationController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\admin\\StationController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\admin\\StationController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\admin\\StationController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 10:28:55 --> syntax error, unexpected token ","
+in APPPATH\Controllers\admin\StationController.php on line 183.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\admin\\StationController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\admin\\StationController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\admin\\StationController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\admin\\StationController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 10:29:12 --> syntax error, unexpected token ","
+in APPPATH\Controllers\admin\StationController.php on line 183.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\admin\\StationController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\admin\\StationController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\admin\\StationController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\admin\\StationController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 10:29:13 --> syntax error, unexpected token ","
+in APPPATH\Controllers\admin\StationController.php on line 183.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\admin\\StationController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\admin\\StationController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\admin\\StationController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\admin\\StationController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 10:29:27 --> syntax error, unexpected token ","
+in APPPATH\Controllers\admin\StationController.php on line 183.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\admin\\StationController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\admin\\StationController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\admin\\StationController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\admin\\StationController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 10:29:59 --> syntax error, unexpected token ";"
+in APPPATH\Views\admin\service_station\edit.php on line 63.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/service_station/edit', [], true)
+ 3 APPPATH\Controllers\admin\StationController.php(175): view('admin/service_station/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\admin\StationController->edit()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\StationController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 22:48:21 --> Undefined array key "cat_id"
+in APPPATH\Views\service_station\service_categories.php on line 91.
+ 1 APPPATH\Views\service_station\service_categories.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cat_id"', 'APPPATH\\Views\\service_station\\service_categories.php', 91)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\service_categories.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/service_categories.php', [], true)
+ 5 APPPATH\Controllers\StationController.php(366): view('service_station/service_categories.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_categories()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 22:48:39 --> Undefined array key 0
+in APPPATH\Views\service_station\service_categories.php on line 91.
+ 1 APPPATH\Views\service_station\service_categories.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\service_station\\service_categories.php', 91)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\service_categories.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/service_categories.php', [], true)
+ 5 APPPATH\Controllers\StationController.php(366): view('service_station/service_categories.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_categories()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 22:51:08 --> Undefined variable $result
+in APPPATH\Views\service_station\service_categories.php on line 134.
+ 1 APPPATH\Views\service_station\service_categories.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'APPPATH\\Views\\service_station\\service_categories.php', 134)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\service_categories.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/service_categories.php', [], true)
+ 5 APPPATH\Controllers\StationController.php(366): view('service_station/service_categories.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_categories()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 22:51:09 --> Undefined variable $result
+in APPPATH\Views\service_station\service_categories.php on line 134.
+ 1 APPPATH\Views\service_station\service_categories.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $result', 'APPPATH\\Views\\service_station\\service_categories.php', 134)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\service_categories.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/service_categories.php', [], true)
+ 5 APPPATH\Controllers\StationController.php(366): view('service_station/service_categories.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_categories()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 22:53:22 --> Cannot use object of type stdClass as array
+in APPPATH\Views\service_station\service_categories.php on line 140.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/service_categories.php', [], true)
+ 4 APPPATH\Controllers\StationController.php(366): view('service_station/service_categories.php', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_categories()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 22:53:54 --> Undefined array key "cat_id"
+in APPPATH\Views\service_station\service_categories.php on line 140.
+ 1 APPPATH\Views\service_station\service_categories.php(140): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cat_id"', 'APPPATH\\Views\\service_station\\service_categories.php', 140)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\service_categories.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/service_categories.php', [], true)
+ 5 APPPATH\Controllers\StationController.php(366): view('service_station/service_categories.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_categories()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 22:54:48 --> Undefined array key "cat_id"
+in APPPATH\Views\service_station\service_categories.php on line 140.
+ 1 APPPATH\Views\service_station\service_categories.php(140): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cat_id"', 'APPPATH\\Views\\service_station\\service_categories.php', 140)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\service_categories.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/service_categories.php', [], true)
+ 5 APPPATH\Controllers\StationController.php(366): view('service_station/service_categories.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_categories()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 22:54:49 --> Undefined array key "cat_id"
+in APPPATH\Views\service_station\service_categories.php on line 140.
+ 1 APPPATH\Views\service_station\service_categories.php(140): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cat_id"', 'APPPATH\\Views\\service_station\\service_categories.php', 140)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\service_categories.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/service_categories.php', [], true)
+ 5 APPPATH\Controllers\StationController.php(366): view('service_station/service_categories.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_categories()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 23:50:12 --> Undefined variable $service_station
+in APPPATH\Views\service_station\service_station_details.php on line 51.
+ 1 APPPATH\Views\service_station\service_station_details.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $service_station', 'APPPATH\\Views\\service_station\\service_station_details.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\service_station_details.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/service_station_details', [], true)
+ 5 APPPATH\Controllers\StationController.php(514): view('service_station/service_station_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station_details()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-17 23:56:04 --> Undefined array key "Address"
+in APPPATH\Views\service_station\service_station_details.php on line 54.
+ 1 APPPATH\Views\service_station\service_station_details.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Address"', 'APPPATH\\Views\\service_station\\service_station_details.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\service_station_details.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/service_station_details', [], true)
+ 5 APPPATH\Controllers\StationController.php(514): view('service_station/service_station_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station_details()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

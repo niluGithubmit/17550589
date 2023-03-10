@@ -1,0 +1,1179 @@
+ERROR - 2022-11-24 01:21:04 --> mysqli_sql_exception: Unknown column 'password' in 'field list' in C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `se...', 0)
+#1 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\xampp\htdocs\service_station2\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\xampp\htdocs\service_station2\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\service_station2\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\service_station2\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\service_station2\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\service_station2\app\Controllers\StationController.php(467): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(927): App\Controllers\StationController->attemptRegister()
+#10 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#11 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\service_station2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-11-24 01:25:00 --> mysqli_sql_exception: Unknown column 'password' in 'field list' in C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `se...', 0)
+#1 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `se...')
+#2 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `se...')
+#3 C:\xampp\htdocs\service_station2\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `se...', Array, false)
+#4 C:\xampp\htdocs\service_station2\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\service_station2\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\service_station2\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\service_station2\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\service_station2\app\Controllers\StationController.php(467): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(927): App\Controllers\StationController->attemptRegister()
+#10 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#11 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\service_station2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-24 02:36:34 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\service_station\appointments.php on line 117.
+ 1 APPPATH\Views\service_station\appointments.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\service_station\\appointments.php', 117)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\appointments.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/appointments', [], true)
+ 5 APPPATH\Controllers\StationController.php(152): view('service_station/appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 02:40:06 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\service_station\service_history.php on line 117.
+ 1 APPPATH\Views\service_station\service_history.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\service_station\\service_history.php', 117)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\service_history.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/service_history', [], true)
+ 5 APPPATH\Controllers\StationController.php(174): view('service_station/service_history', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->services_station_service_history()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 02:52:52 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\CustomerController.php on line 88.
+ 1 APPPATH\Controllers\CustomerController.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\CustomerController.php', 88)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 02:54:03 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\CustomerController.php on line 88.
+ 1 APPPATH\Controllers\CustomerController.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\CustomerController.php', 88)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 02:57:49 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\CustomerController.php on line 88.
+ 1 APPPATH\Controllers\CustomerController.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\CustomerController.php', 88)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 02:57:50 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\CustomerController.php on line 88.
+ 1 APPPATH\Controllers\CustomerController.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\CustomerController.php', 88)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 03:01:38 --> Undefined variable $owner_data
+in APPPATH\Views\service_station\service_station_details.php on line 323.
+ 1 APPPATH\Views\service_station\service_station_details.php(323): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $owner_data', 'APPPATH\\Views\\service_station\\service_station_details.php', 323)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\service_station_details.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/service_station_details', [], true)
+ 5 APPPATH\Controllers\StationController.php(776): view('service_station/service_station_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station_details()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 03:20:15 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\service_station\complete_service_report.php on line 31.
+ 1 APPPATH\Views\service_station\complete_service_report.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\service_station\\complete_service_report.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(824): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 03:22:08 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\service_station\complete_service_report.php on line 32.
+ 1 APPPATH\Views\service_station\complete_service_report.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\service_station\\complete_service_report.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(824): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 03:23:05 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\service_station\complete_service_report.php on line 32.
+ 1 APPPATH\Views\service_station\complete_service_report.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\service_station\\complete_service_report.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(824): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 03:24:30 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\service_station\complete_service_report.php on line 32.
+ 1 APPPATH\Views\service_station\complete_service_report.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\service_station\\complete_service_report.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(824): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 03:27:48 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\service_station\complete_service_report.php on line 32.
+ 1 APPPATH\Views\service_station\complete_service_report.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\service_station\\complete_service_report.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(824): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 03:34:20 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\CustomerController.php on line 180.
+ 1 APPPATH\Controllers\CustomerController.php(180): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\CustomerController.php', 180)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->customer_appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 11:03:21 --> Class 'Locale' not found
+in SYSTEMPATH\CodeIgniter.php on line 186.
+ 1 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+ERROR - 2022-11-24 07:58:53 --> mysqli_sql_exception: Unknown column 'latitude' in 'field list' in C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php(292): mysqli->query('select station_...', 0)
+#1 C:\xampp\htdocs\service\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('select station_...')
+#2 C:\xampp\htdocs\service\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('select station_...')
+#3 C:\xampp\htdocs\service\app\Models\HomeModel.php(33): CodeIgniter\Database\BaseConnection->query('select station_...')
+#4 C:\xampp\htdocs\service\app\Controllers\Home.php(80): App\Models\HomeModel->get_stations()
+#5 C:\xampp\htdocs\service\system\CodeIgniter.php(927): App\Controllers\Home->getStations()
+#6 C:\xampp\htdocs\service\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\service\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\service\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 07:58:53 --> Unknown column 'latitude' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('select station_id, latitude, longitude from service_stations', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('select station_id, latitude, longitude from service_stations')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('select station_id, latitude, longitude from service_stations')
+ 4 APPPATH\Models\HomeModel.php(33): CodeIgniter\Database\BaseConnection->query('select station_id, latitude, longitude from service_stations')
+ 5 APPPATH\Controllers\Home.php(80): App\Models\HomeModel->get_stations()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getStations()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 07:59:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 in C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from s...', 0)
+#1 C:\xampp\htdocs\service\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('select * from s...')
+#2 C:\xampp\htdocs\service\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('select * from s...')
+#3 C:\xampp\htdocs\service\app\Models\HomeModel.php(45): CodeIgniter\Database\BaseConnection->query('select * from s...')
+#4 C:\xampp\htdocs\service\app\Controllers\Home.php(73): App\Models\HomeModel->get_stations1('')
+#5 C:\xampp\htdocs\service\system\CodeIgniter.php(927): App\Controllers\Home->search()
+#6 C:\xampp\htdocs\service\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\service\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\service\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 07:59:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('select * from service_stations where station_id in ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('select * from service_stations where station_id in ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('select * from service_stations where station_id in ()')
+ 4 APPPATH\Models\HomeModel.php(45): CodeIgniter\Database\BaseConnection->query('select * from service_stations where station_id in ()')
+ 5 APPPATH\Controllers\Home.php(73): App\Models\HomeModel->get_stations1('ROOTPATH\\public')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->search()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 07:59:26 --> mysqli_sql_exception: Unknown column 'latitude' in 'field list' in C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php(292): mysqli->query('select station_...', 0)
+#1 C:\xampp\htdocs\service\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('select station_...')
+#2 C:\xampp\htdocs\service\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('select station_...')
+#3 C:\xampp\htdocs\service\app\Models\HomeModel.php(33): CodeIgniter\Database\BaseConnection->query('select station_...')
+#4 C:\xampp\htdocs\service\app\Controllers\Home.php(80): App\Models\HomeModel->get_stations()
+#5 C:\xampp\htdocs\service\system\CodeIgniter.php(927): App\Controllers\Home->getStations()
+#6 C:\xampp\htdocs\service\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\service\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\service\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 07:59:26 --> Unknown column 'latitude' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('select station_id, latitude, longitude from service_stations', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('select station_id, latitude, longitude from service_stations')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('select station_id, latitude, longitude from service_stations')
+ 4 APPPATH\Models\HomeModel.php(33): CodeIgniter\Database\BaseConnection->query('select station_id, latitude, longitude from service_stations')
+ 5 APPPATH\Controllers\Home.php(80): App\Models\HomeModel->get_stations()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->getStations()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 07:59:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 in C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from s...', 0)
+#1 C:\xampp\htdocs\service\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('select * from s...')
+#2 C:\xampp\htdocs\service\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('select * from s...')
+#3 C:\xampp\htdocs\service\app\Models\HomeModel.php(45): CodeIgniter\Database\BaseConnection->query('select * from s...')
+#4 C:\xampp\htdocs\service\app\Controllers\Home.php(73): App\Models\HomeModel->get_stations1('')
+#5 C:\xampp\htdocs\service\system\CodeIgniter.php(927): App\Controllers\Home->search()
+#6 C:\xampp\htdocs\service\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\service\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\service\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 07:59:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('select * from service_stations where station_id in ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('select * from service_stations where station_id in ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('select * from service_stations where station_id in ()')
+ 4 APPPATH\Models\HomeModel.php(45): CodeIgniter\Database\BaseConnection->query('select * from service_stations where station_id in ()')
+ 5 APPPATH\Controllers\Home.php(73): App\Models\HomeModel->get_stations1('ROOTPATH\\public')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->search()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 07:59:59 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 in C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from s...', 0)
+#1 C:\xampp\htdocs\service\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('select * from s...')
+#2 C:\xampp\htdocs\service\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('select * from s...')
+#3 C:\xampp\htdocs\service\app\Models\HomeModel.php(45): CodeIgniter\Database\BaseConnection->query('select * from s...')
+#4 C:\xampp\htdocs\service\app\Controllers\Home.php(73): App\Models\HomeModel->get_stations1('')
+#5 C:\xampp\htdocs\service\system\CodeIgniter.php(927): App\Controllers\Home->search()
+#6 C:\xampp\htdocs\service\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\service\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\service\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 07:59:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('select * from service_stations where station_id in ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('select * from service_stations where station_id in ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('select * from service_stations where station_id in ()')
+ 4 APPPATH\Models\HomeModel.php(45): CodeIgniter\Database\BaseConnection->query('select * from service_stations where station_id in ()')
+ 5 APPPATH\Controllers\Home.php(73): App\Models\HomeModel->get_stations1('ROOTPATH\\public')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->search()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 08:01:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 in C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from s...', 0)
+#1 C:\xampp\htdocs\service\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('select * from s...')
+#2 C:\xampp\htdocs\service\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('select * from s...')
+#3 C:\xampp\htdocs\service\app\Models\HomeModel.php(45): CodeIgniter\Database\BaseConnection->query('select * from s...')
+#4 C:\xampp\htdocs\service\app\Controllers\Home.php(73): App\Models\HomeModel->get_stations1('')
+#5 C:\xampp\htdocs\service\system\CodeIgniter.php(927): App\Controllers\Home->search()
+#6 C:\xampp\htdocs\service\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\service\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\service\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 08:01:12 --> Call to a member function getResult() on bool
+in APPPATH\Models\HomeModel.php on line 47.
+ 1 APPPATH\Controllers\Home.php(73): App\Models\HomeModel->get_stations1('ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->search()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 08:02:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 in C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from s...', 0)
+#1 C:\xampp\htdocs\service\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('select * from s...')
+#2 C:\xampp\htdocs\service\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('select * from s...')
+#3 C:\xampp\htdocs\service\app\Models\HomeModel.php(45): CodeIgniter\Database\BaseConnection->query('select * from s...')
+#4 C:\xampp\htdocs\service\app\Controllers\Home.php(73): App\Models\HomeModel->get_stations1('')
+#5 C:\xampp\htdocs\service\system\CodeIgniter.php(927): App\Controllers\Home->search()
+#6 C:\xampp\htdocs\service\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\service\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\service\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 08:02:45 --> Call to a member function getResult() on bool
+in APPPATH\Models\HomeModel.php on line 47.
+ 1 APPPATH\Controllers\Home.php(73): App\Models\HomeModel->get_stations1('ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->search()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 08:03:36 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 in C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from s...', 0)
+#1 C:\xampp\htdocs\service\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('select * from s...')
+#2 C:\xampp\htdocs\service\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('select * from s...')
+#3 C:\xampp\htdocs\service\app\Models\HomeModel.php(45): CodeIgniter\Database\BaseConnection->query('select * from s...')
+#4 C:\xampp\htdocs\service\app\Controllers\Home.php(73): App\Models\HomeModel->get_stations1('')
+#5 C:\xampp\htdocs\service\system\CodeIgniter.php(927): App\Controllers\Home->search()
+#6 C:\xampp\htdocs\service\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\service\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\service\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 08:03:36 --> Call to a member function getResult() on bool
+in APPPATH\Models\HomeModel.php on line 47.
+ 1 APPPATH\Controllers\Home.php(73): App\Models\HomeModel->get_stations1('ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->search()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 08:04:04 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 in C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from s...', 0)
+#1 C:\xampp\htdocs\service\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('select * from s...')
+#2 C:\xampp\htdocs\service\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('select * from s...')
+#3 C:\xampp\htdocs\service\app\Models\HomeModel.php(45): CodeIgniter\Database\BaseConnection->query('select * from s...')
+#4 C:\xampp\htdocs\service\app\Controllers\Home.php(73): App\Models\HomeModel->get_stations1('')
+#5 C:\xampp\htdocs\service\system\CodeIgniter.php(927): App\Controllers\Home->search()
+#6 C:\xampp\htdocs\service\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\service\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\service\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 08:04:04 --> Call to a member function getResult() on bool
+in APPPATH\Models\HomeModel.php on line 47.
+ 1 APPPATH\Controllers\Home.php(73): App\Models\HomeModel->get_stations1('ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->search()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 08:04:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 in C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from s...', 0)
+#1 C:\xampp\htdocs\service\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('select * from s...')
+#2 C:\xampp\htdocs\service\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('select * from s...')
+#3 C:\xampp\htdocs\service\app\Models\HomeModel.php(45): CodeIgniter\Database\BaseConnection->query('select * from s...')
+#4 C:\xampp\htdocs\service\app\Controllers\Home.php(73): App\Models\HomeModel->get_stations1('')
+#5 C:\xampp\htdocs\service\system\CodeIgniter.php(927): App\Controllers\Home->search()
+#6 C:\xampp\htdocs\service\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\service\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\service\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 08:04:35 --> Call to a member function getResult() on bool
+in APPPATH\Models\HomeModel.php on line 47.
+ 1 APPPATH\Controllers\Home.php(73): App\Models\HomeModel->get_stations1('ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->search()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 08:21:36 --> Undefined variable $page_name
+in APPPATH\Views\layouts\site_layout.php on line 178.
+ 1 APPPATH\Views\layouts\site_layout.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page_name', 'APPPATH\\Views\\layouts\\site_layout.php', 178)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\site_layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/site_layout', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/login.php', [], true)
+ 6 APPPATH\Controllers\StationController.php(607): view('service_station/login.php')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_categories()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 08:35:00 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\customer\my_appointments.php on line 117.
+ 1 APPPATH\Views\customer\my_appointments.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\customer\\my_appointments.php', 117)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('customer/my_appointments', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(185): view('customer/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->customer_appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 08:36:32 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Views\customer\my_appointments.php on line 234.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('customer/my_appointments', [], true)
+ 3 APPPATH\Controllers\CustomerController.php(185): view('customer/my_appointments', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->customer_appointments()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 08:36:52 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\customer\my_appointments.php on line 117.
+ 1 APPPATH\Views\customer\my_appointments.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\customer\\my_appointments.php', 117)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('customer/my_appointments', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(185): view('customer/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->customer_appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 08:37:22 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\customer\my_appointments.php on line 117.
+ 1 APPPATH\Views\customer\my_appointments.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\customer\\my_appointments.php', 117)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('customer/my_appointments', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(185): view('customer/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->customer_appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 08:40:42 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\customer\service_history.php on line 117.
+ 1 APPPATH\Views\customer\service_history.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\customer\\service_history.php', 117)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\service_history.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('customer/service_history', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(199): view('customer/service_history', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->service_history()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 08:41:58 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\customer\service_history.php on line 117.
+ 1 APPPATH\Views\customer\service_history.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\customer\\service_history.php', 117)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\service_history.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('customer/service_history', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(199): view('customer/service_history', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->service_history()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 08:57:35 --> view(): Argument #2 ($data) must be of type array, int given, called in C:\xampp\htdocs\service\app\Controllers\StationController.php on line 298
+in SYSTEMPATH\Common.php on line 1120.
+ 1 APPPATH\Controllers\StationController.php(298): view('service_station/invoice', 2)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 09:00:34 --> view(): Argument #3 ($options) must be of type array, bool given, called in C:\xampp\htdocs\service\app\Controllers\StationController.php on line 298
+in SYSTEMPATH\Common.php on line 1120.
+ 1 APPPATH\Controllers\StationController.php(298): view('service_station/invoice', [...], true)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 09:00:36 --> view(): Argument #3 ($options) must be of type array, bool given, called in C:\xampp\htdocs\service\app\Controllers\StationController.php on line 298
+in SYSTEMPATH\Common.php on line 1120.
+ 1 APPPATH\Controllers\StationController.php(298): view('service_station/invoice', [...], true)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 09:01:22 --> view(): Argument #3 ($options) must be of type array, bool given, called in C:\xampp\htdocs\service\app\Controllers\StationController.php on line 298
+in SYSTEMPATH\Common.php on line 1120.
+ 1 APPPATH\Controllers\StationController.php(298): view('service_station/invoice', [...], true)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 09:01:25 --> view(): Argument #3 ($options) must be of type array, bool given, called in C:\xampp\htdocs\service\app\Controllers\StationController.php on line 298
+in SYSTEMPATH\Common.php on line 1120.
+ 1 APPPATH\Controllers\StationController.php(298): view('service_station/invoice', [...], true)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 09:02:21 --> view(): Argument #3 ($options) must be of type array, bool given, called in C:\xampp\htdocs\service\app\Controllers\StationController.php on line 298
+in SYSTEMPATH\Common.php on line 1120.
+ 1 APPPATH\Controllers\StationController.php(298): view('service_station/invoice', [...], true)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 09:02:44 --> view(): Argument #3 ($options) must be of type array, bool given, called in C:\xampp\htdocs\service\app\Controllers\StationController.php on line 298
+in SYSTEMPATH\Common.php on line 1120.
+ 1 APPPATH\Controllers\StationController.php(298): view('service_station/invoice', [...], true)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 09:03:39 --> view(): Argument #3 ($options) must be of type array, bool given, called in C:\xampp\htdocs\service\app\Controllers\StationController.php on line 298
+in SYSTEMPATH\Common.php on line 1120.
+ 1 APPPATH\Controllers\StationController.php(298): view('service_station/invoice', [...], true)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 09:03:49 --> Undefined variable $csid
+in APPPATH\Views\service_station\invoice.php on line 3.
+ 1 APPPATH\Views\service_station\invoice.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $csid', 'APPPATH\\Views\\service_station\\invoice.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\invoice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/invoice', [], true)
+ 5 APPPATH\Controllers\StationController.php(298): view('service_station/invoice')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 09:06:21 --> file_get_contents(): Read of 8192 bytes failed with errno=13 Permission denied
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 82.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'file_get_contents(): Read of 8192 bytes failed with errno=13 Permission denied', 'SYSTEMPATH\\Debug\\Toolbar\\Collectors\\History.php', 82)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(82): file_get_contents('ROOTPATH\\writable\\debugbar\\debugbar_1669302381.783909.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(500): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1669302380.803477', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(477): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(46): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(328): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 09:06:55 --> syntax error, unexpected token ";"
+in APPPATH\Views\customer\my_appointments.php on line 223.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('customer/my_appointments', [], true)
+ 3 APPPATH\Controllers\CustomerController.php(185): view('customer/my_appointments', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->customer_appointments()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 09:08:55 --> Undefined variable $csid
+in APPPATH\Views\service_station\invoice.php on line 3.
+ 1 APPPATH\Views\service_station\invoice.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $csid', 'APPPATH\\Views\\service_station\\invoice.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\invoice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/invoice', [], true)
+ 5 APPPATH\Controllers\StationController.php(298): view('service_station/invoice')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 09:09:08 --> Undefined variable $csid
+in APPPATH\Views\service_station\invoice.php on line 3.
+ 1 APPPATH\Views\service_station\invoice.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $csid', 'APPPATH\\Views\\service_station\\invoice.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\invoice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/invoice', [], true)
+ 5 APPPATH\Controllers\StationController.php(298): view('service_station/invoice')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 09:09:19 --> Undefined variable $ids
+in APPPATH\Views\service_station\invoice.php on line 5.
+ 1 APPPATH\Views\service_station\invoice.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ids', 'APPPATH\\Views\\service_station\\invoice.php', 5)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\invoice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/invoice', [], true)
+ 5 APPPATH\Controllers\StationController.php(298): view('service_station/invoice')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 09:09:27 --> Undefined variable $link
+in APPPATH\Views\service_station\invoice.php on line 6.
+ 1 APPPATH\Views\service_station\invoice.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $link', 'APPPATH\\Views\\service_station\\invoice.php', 6)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\invoice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/invoice', [], true)
+ 5 APPPATH\Controllers\StationController.php(298): view('service_station/invoice')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 09:17:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 in C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from s...', 0)
+#1 C:\xampp\htdocs\service\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('select * from s...')
+#2 C:\xampp\htdocs\service\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('select * from s...')
+#3 C:\xampp\htdocs\service\app\Models\HomeModel.php(45): CodeIgniter\Database\BaseConnection->query('select * from s...')
+#4 C:\xampp\htdocs\service\app\Controllers\Home.php(73): App\Models\HomeModel->get_stations1('')
+#5 C:\xampp\htdocs\service\system\CodeIgniter.php(927): App\Controllers\Home->search()
+#6 C:\xampp\htdocs\service\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\service\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\service\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 09:17:45 --> Call to a member function getResult() on bool
+in APPPATH\Models\HomeModel.php on line 47.
+ 1 APPPATH\Controllers\Home.php(73): App\Models\HomeModel->get_stations1('ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->search()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-24 09:19:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1 in C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service\system\Database\MySQLi\Connection.php(292): mysqli->query('select * from s...', 0)
+#1 C:\xampp\htdocs\service\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('select * from s...')
+#2 C:\xampp\htdocs\service\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('select * from s...')
+#3 C:\xampp\htdocs\service\app\Models\HomeModel.php(45): CodeIgniter\Database\BaseConnection->query('select * from s...')
+#4 C:\xampp\htdocs\service\app\Controllers\Home.php(73): App\Models\HomeModel->get_stations1('')
+#5 C:\xampp\htdocs\service\system\CodeIgniter.php(927): App\Controllers\Home->search()
+#6 C:\xampp\htdocs\service\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\service\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\service\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-24 09:19:05 --> Call to a member function getResult() on bool
+in APPPATH\Models\HomeModel.php on line 47.
+ 1 APPPATH\Controllers\Home.php(73): App\Models\HomeModel->get_stations1('ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->search()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 09:21:05 --> Undefined variable $page_name
+in APPPATH\Views\layouts\site_layout.php on line 178.
+ 1 APPPATH\Views\layouts\site_layout.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page_name', 'APPPATH\\Views\\layouts\\site_layout.php', 178)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\site_layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/site_layout', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/login.php', [], true)
+ 6 APPPATH\Controllers\StationController.php(607): view('service_station/login.php')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_categories()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 10:05:28 --> Cannot use Config\Services as Services because the name is already in use
+in APPPATH\Controllers\Home.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-24 10:13:51 --> syntax error, unexpected double-quoted string " class=", expecting "," or ";"
+in APPPATH\Views\components\service_station_nav.php on line 12.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('App\\Views\\components\\service_station_nav', [], true)
+ 3 APPPATH\Views\layouts\service_station_layout.php(128): view('App\\Views\\components\\service_station_nav')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\service_station_layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/service_station_layout', [], true)
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/dashboard', [], true)
+ 8 APPPATH\Controllers\CustomerController.php(639): view('service_station/dashboard', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->attemptLogin()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 10:14:50 --> syntax error, unexpected token "class", expecting "," or ";"
+in APPPATH\Views\components\service_station_nav.php on line 12.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('App\\Views\\components\\service_station_nav', [], true)
+ 3 APPPATH\Views\layouts\service_station_layout.php(128): view('App\\Views\\components\\service_station_nav')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\service_station_layout.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/service_station_layout', [], true)
+ 7 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/dashboard', [], true)
+ 8 APPPATH\Controllers\CustomerController.php(639): view('service_station/dashboard', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->attemptLogin()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 10:30:45 --> Undefined variable $count_stations
+in APPPATH\Views\dashboard.php on line 85.
+ 1 APPPATH\Views\dashboard.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $count_stations', 'APPPATH\\Views\\dashboard.php', 85)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(689): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->attemptLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 10:33:09 --> Undefined variable $count_owners
+in APPPATH\Views\dashboard.php on line 93.
+ 1 APPPATH\Views\dashboard.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $count_owners', 'APPPATH\\Views\\dashboard.php', 93)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(689): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->attemptLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 10:34:31 --> Undefined variable $count_stations
+in APPPATH\Views\dashboard.php on line 85.
+ 1 APPPATH\Views\dashboard.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $count_stations', 'APPPATH\\Views\\dashboard.php', 85)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(689): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->attemptLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 10:35:38 --> Undefined variable $count_stations
+in APPPATH\Views\dashboard.php on line 85.
+ 1 APPPATH\Views\dashboard.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $count_stations', 'APPPATH\\Views\\dashboard.php', 85)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(689): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->attemptLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 10:38:26 --> Class "App\Controllers\complete_serviceModel" not found
+in APPPATH\Controllers\CustomerController.php on line 689.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->attemptLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:21:59 --> Call to undefined function dat()
+in APPPATH\Views\service_station\reports.php on line 127.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/reports', [], true)
+ 4 APPPATH\Controllers\StationController.php(803): view('service_station/reports', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station_reports()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:33:42 --> Undefined variable $date
+in APPPATH\Controllers\StationController.php on line 853.
+ 1 APPPATH\Controllers\StationController.php(853): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $date', 'APPPATH\\Controllers\\StationController.php', 853)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:35:27 --> Undefined variable $page_name
+in APPPATH\Views\layouts\service_station_layout.php on line 172.
+ 1 APPPATH\Views\layouts\service_station_layout.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page_name', 'APPPATH\\Views\\layouts\\service_station_layout.php', 172)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\service_station_layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/service_station_layout', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 6 APPPATH\Controllers\StationController.php(863): view('service_station/complete_service_report', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:37:10 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(870): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:37:37 --> compact(): Undefined variable $14
+in APPPATH\Controllers\StationController.php on line 863.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'compact(): Undefined variable $14', 'APPPATH\\Controllers\\StationController.php', 863)
+ 2 APPPATH\Controllers\StationController.php(863): compact([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:38:57 --> compact(): Undefined variable $14
+in APPPATH\Controllers\StationController.php on line 859.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'compact(): Undefined variable $14', 'APPPATH\\Controllers\\StationController.php', 859)
+ 2 APPPATH\Controllers\StationController.php(859): compact([...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:40:00 --> Undefined array key "id"
+in APPPATH\Views\service_station\complete_service_report.php on line 34.
+ 1 APPPATH\Views\service_station\complete_service_report.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\service_station\\complete_service_report.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:42:03 --> Undefined array key "time_slot"
+in APPPATH\Views\service_station\complete_service_report.php on line 35.
+ 1 APPPATH\Views\service_station\complete_service_report.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "time_slot"', 'APPPATH\\Views\\service_station\\complete_service_report.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:43:34 --> Undefined array key "price"
+in APPPATH\Views\service_station\complete_service_report.php on line 35.
+ 1 APPPATH\Views\service_station\complete_service_report.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price"', 'APPPATH\\Views\\service_station\\complete_service_report.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:48:16 --> Undefined array key "id"
+in APPPATH\Views\service_station\complete_service_report.php on line 15.
+ 1 APPPATH\Views\service_station\complete_service_report.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\service_station\\complete_service_report.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:48:35 --> Undefined array key 0
+in APPPATH\Views\service_station\complete_service_report.php on line 15.
+ 1 APPPATH\Views\service_station\complete_service_report.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\service_station\\complete_service_report.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:48:45 --> Undefined array key 1
+in APPPATH\Views\service_station\complete_service_report.php on line 15.
+ 1 APPPATH\Views\service_station\complete_service_report.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Views\\service_station\\complete_service_report.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:49:26 --> Undefined array key "id"
+in APPPATH\Views\service_station\complete_service_report.php on line 15.
+ 1 APPPATH\Views\service_station\complete_service_report.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\service_station\\complete_service_report.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:50:36 --> Array to string conversion
+in APPPATH\Views\service_station\complete_service_report.php on line 15.
+ 1 APPPATH\Views\service_station\complete_service_report.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\service_station\\complete_service_report.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:51:12 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(872): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:51:37 --> Undefined array key "price"
+in APPPATH\Views\service_station\complete_service_report.php on line 38.
+ 1 APPPATH\Views\service_station\complete_service_report.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price"', 'APPPATH\\Views\\service_station\\complete_service_report.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:51:54 --> Undefined array key "price"
+in APPPATH\Views\service_station\complete_service_report.php on line 38.
+ 1 APPPATH\Views\service_station\complete_service_report.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price"', 'APPPATH\\Views\\service_station\\complete_service_report.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:52:11 --> Undefined array key "data"
+in APPPATH\Views\service_station\complete_service_report.php on line 38.
+ 1 APPPATH\Views\service_station\complete_service_report.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "data"', 'APPPATH\\Views\\service_station\\complete_service_report.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:57:32 --> Undefined variable $complete
+in APPPATH\Views\service_station\complete_service_report.php on line 35.
+ 1 APPPATH\Views\service_station\complete_service_report.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $complete', 'APPPATH\\Views\\service_station\\complete_service_report.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:58:37 --> Undefined variable $complete
+in APPPATH\Views\service_station\complete_service_report.php on line 35.
+ 1 APPPATH\Views\service_station\complete_service_report.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $complete', 'APPPATH\\Views\\service_station\\complete_service_report.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:59:02 --> Undefined variable $complete
+in APPPATH\Views\service_station\complete_service_report.php on line 35.
+ 1 APPPATH\Views\service_station\complete_service_report.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $complete', 'APPPATH\\Views\\service_station\\complete_service_report.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:59:19 --> Undefined array key "price"
+in APPPATH\Views\service_station\complete_service_report.php on line 38.
+ 1 APPPATH\Views\service_station\complete_service_report.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price"', 'APPPATH\\Views\\service_station\\complete_service_report.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 20:59:44 --> Undefined array key 0
+in APPPATH\Views\service_station\complete_service_report.php on line 38.
+ 1 APPPATH\Views\service_station\complete_service_report.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\service_station\\complete_service_report.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 21:00:27 --> Undefined array key "complete"
+in APPPATH\Views\service_station\complete_service_report.php on line 15.
+ 1 APPPATH\Views\service_station\complete_service_report.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "complete"', 'APPPATH\\Views\\service_station\\complete_service_report.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 21:02:55 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(872): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 21:04:12 --> Unmatched '}'
+in APPPATH\Views\service_station\complete_service_report.php on line 42.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 3 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 21:09:07 --> Undefined array key 1
+in APPPATH\Views\service_station\complete_service_report.php on line 15.
+ 1 APPPATH\Views\service_station\complete_service_report.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Views\\service_station\\complete_service_report.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 21:10:39 --> Undefined array key 1
+in APPPATH\Views\service_station\complete_service_report.php on line 15.
+ 1 APPPATH\Views\service_station\complete_service_report.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Views\\service_station\\complete_service_report.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 21:12:00 --> Undefined array key 1
+in APPPATH\Views\service_station\complete_service_report.php on line 15.
+ 1 APPPATH\Views\service_station\complete_service_report.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Views\\service_station\\complete_service_report.php', 15)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 21:18:11 --> syntax error, unexpected token "while"
+in APPPATH\Views\service_station\complete_service_report.php on line 36.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 3 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 21:18:33 --> syntax error, unexpected token ";"
+in APPPATH\Views\service_station\complete_service_report.php on line 36.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 3 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 21:20:03 --> syntax error, unexpected token ";"
+in APPPATH\Views\service_station\complete_service_report.php on line 36.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 3 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 21:21:29 --> syntax error, unexpected token ";"
+in APPPATH\Views\service_station\complete_service_report.php on line 36.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 3 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 21:22:49 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 262160384 bytes)
+in APPPATH\Views\service_station\complete_service_report.php on line 39.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-24 21:22:59 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(872): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 21:23:51 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(872): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 21:24:15 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(872): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 21:25:22 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(872): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 21:25:48 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(872): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 21:27:32 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(872): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 21:46:47 --> Undefined variable $service_stationData
+in APPPATH\Views\service_station\complete_service_report.php on line 17.
+ 1 APPPATH\Views\service_station\complete_service_report.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $service_stationData', 'APPPATH\\Views\\service_station\\complete_service_report.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service_report.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 5 APPPATH\Controllers\StationController.php(866): view('service_station/complete_service_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 21:59:24 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\components\notifications.php on line 40.
+ 1 APPPATH\Views\components\notifications.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH\\Views\\components\\notifications.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\components\\notifications.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('App\\Views\\components\\notifications', [], true)
+ 5 APPPATH\Views\service_station\reports.php(100): view('App\\Views\\components\\notifications')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\reports.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/reports', [], true)
+ 9 APPPATH\Controllers\StationController.php(803): view('service_station/reports', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station_reports()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-24 22:23:05 --> syntax error, unexpected variable "$result", expecting "function" or "const"
+in APPPATH\Models\ServiceStationModel.php on line 180.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\ServiceStationModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ServiceStationModel')
+ 3 APPPATH\Controllers\StationController.php(851): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ServiceStationModel')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

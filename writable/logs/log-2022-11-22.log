@@ -1,0 +1,349 @@
+CRITICAL - 2022-11-22 00:22:35 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Models\ratingModel.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-22 00:22:45 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Models\ratingModel.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-22 00:24:05 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Models\ratingModel.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-22 00:38:09 --> syntax error, unexpected token ">"
+in APPPATH\Controllers\CustomerController.php on line 195.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\CustomerController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CustomerController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CustomerController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\CustomerController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 00:38:54 --> syntax error, unexpected token ">"
+in APPPATH\Controllers\CustomerController.php on line 195.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\CustomerController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CustomerController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CustomerController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\CustomerController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 00:39:06 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\CustomerController.php on line 195.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\CustomerController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CustomerController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CustomerController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\CustomerController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 00:39:14 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\CustomerController.php on line 198.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\CustomerController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CustomerController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CustomerController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\CustomerController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 00:49:54 --> Undefined array key "rated"
+in APPPATH\Views\customer\my_appointments.php on line 199.
+ 1 APPPATH\Views\customer\my_appointments.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rated"', 'APPPATH\\Views\\customer\\my_appointments.php', 199)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('customer/my_appointments', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(177): view('customer/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->customer_appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 00:57:56 --> Undefined array key "service_stationData"
+in APPPATH\Views\service_station\invoice.php on line 69.
+ 1 APPPATH\Views\service_station\invoice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "service_stationData"', 'APPPATH\\Views\\service_station\\invoice.php', 69)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\invoice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/invoice', [], true)
+ 5 APPPATH\Controllers\StationController.php(273): view('service_station/invoice')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-22 01:02:23 --> mysqli_sql_exception: Table 'service_station.service_station' doesn't exist in C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT\r\n  appoi...', 0)
+#1 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n  appoi...')
+#2 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n  appoi...')
+#3 C:\xampp\htdocs\service_station2\app\Views\service_station\invoice.php(34): CodeIgniter\Database\BaseConnection->query('SELECT\r\n  appoi...')
+#4 C:\xampp\htdocs\service_station2\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\service_station2\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\service_station2\system\Common.php(1134): CodeIgniter\View\View->render('service_station...', Array, true)
+#7 C:\xampp\htdocs\service_station2\app\Controllers\StationController.php(273): view('service_station...')
+#8 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+#9 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#10 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\service_station2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-22 01:02:23 --> Call to a member function getResultArray() on bool
+in APPPATH\Views\service_station\invoice.php on line 37.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/invoice', [], true)
+ 4 APPPATH\Controllers\StationController.php(273): view('service_station/invoice')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-22 01:07:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM appointments
+JOIN vehicle_owners
+  ON appointments.owner_id = vehicle_...' at line 25 in C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT\r\n  appoi...', 0)
+#1 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n  appoi...')
+#2 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n  appoi...')
+#3 C:\xampp\htdocs\service_station2\app\Views\service_station\invoice.php(39): CodeIgniter\Database\BaseConnection->query('SELECT\r\n  appoi...')
+#4 C:\xampp\htdocs\service_station2\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\service_station2\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\xampp\htdocs\service_station2\system\Common.php(1134): CodeIgniter\View\View->render('service_station...', Array, true)
+#7 C:\xampp\htdocs\service_station2\app\Controllers\StationController.php(273): view('service_station...')
+#8 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+#9 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#10 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\service_station2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-22 01:07:42 --> Call to a member function getResultArray() on bool
+in APPPATH\Views\service_station\invoice.php on line 42.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/invoice', [], true)
+ 4 APPPATH\Controllers\StationController.php(273): view('service_station/invoice')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 03:01:05 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\service_station\edit.php on line 54.
+ 1 APPPATH\Views\admin\service_station\edit.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\service_station\\edit.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\service_station\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/service_station/edit', [], true)
+ 5 APPPATH\Controllers\admin\StationController.php(175): view('admin/service_station/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\admin\StationController->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 03:02:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\service_station\edit.php on line 54.
+ 1 APPPATH\Views\admin\service_station\edit.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\admin\\service_station\\edit.php', 54)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\service_station\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/service_station/edit', [], true)
+ 5 APPPATH\Controllers\admin\StationController.php(175): view('admin/service_station/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\admin\StationController->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 04:22:42 --> Undefined variable $page_name
+in APPPATH\Views\layouts\site_layout.php on line 178.
+ 1 APPPATH\Views\layouts\site_layout.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page_name', 'APPPATH\\Views\\layouts\\site_layout.php', 178)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\site_layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/site_layout', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\Home.php(26): view('index')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 04:39:08 --> Undefined array key "time_slot"
+in APPPATH\Views\service_station.php on line 187.
+ 1 APPPATH\Views\service_station.php(187): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "time_slot"', 'APPPATH\\Views\\service_station.php', 187)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 5 APPPATH\Controllers\StationController.php(413): view('service_station', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 04:39:35 --> Array to string conversion
+in APPPATH\Views\service_station.php on line 192.
+ 1 APPPATH\Views\service_station.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\service_station.php', 192)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 5 APPPATH\Controllers\StationController.php(413): view('service_station', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 04:39:52 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\service_station.php on line 192.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 4 APPPATH\Controllers\StationController.php(413): view('service_station', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 04:40:42 --> Undefined array key "id"
+in APPPATH\Views\service_station.php on line 192.
+ 1 APPPATH\Views\service_station.php(192): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\service_station.php', 192)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 5 APPPATH\Controllers\StationController.php(413): view('service_station', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 04:40:53 --> Cannot use object of type stdClass as array
+in APPPATH\Views\service_station.php on line 192.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 4 APPPATH\Controllers\StationController.php(413): view('service_station', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 04:42:43 --> Cannot use object of type stdClass as array
+in APPPATH\Views\service_station.php on line 192.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 4 APPPATH\Controllers\StationController.php(413): view('service_station', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 04:42:57 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\service_station.php on line 192.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 4 APPPATH\Controllers\StationController.php(413): view('service_station', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 06:55:40 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\service_station.php on line 204.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 4 APPPATH\Controllers\StationController.php(413): view('service_station', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 06:58:24 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\service_station.php on line 198.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 4 APPPATH\Controllers\StationController.php(413): view('service_station', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 06:58:42 --> Division by zero
+in APPPATH\Views\service_station.php on line 210.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 4 APPPATH\Controllers\StationController.php(413): view('service_station', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 07:07:26 --> Undefined variable $db
+in APPPATH\Views\service_station\service_station_details.php on line 61.
+ 1 APPPATH\Views\service_station\service_station_details.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH\\Views\\service_station\\service_station_details.php', 61)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\service_station_details.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/service_station_details', [], true)
+ 5 APPPATH\Controllers\StationController.php(776): view('service_station/service_station_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->service_station_details()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 08:00:35 --> syntax error, unexpected variable "$data", expecting "," or ";"
+in APPPATH\Views\customer\vehicles_information.php on line 213.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('customer/vehicles_information.php', [], true)
+ 3 APPPATH\Controllers\CustomerController.php(593): view('customer/vehicles_information.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->vehicles_information()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 08:00:49 --> syntax error, unexpected token ";"
+in APPPATH\Views\customer\vehicles_information.php on line 213.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('customer/vehicles_information.php', [], true)
+ 3 APPPATH\Controllers\CustomerController.php(593): view('customer/vehicles_information.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->vehicles_information()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 08:10:33 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Views\customer\edit-vehicle.php on line 72.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('customer/edit-vehicle.php', [], true)
+ 3 APPPATH\Controllers\CustomerController.php(584): view('customer/edit-vehicle.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->edit_vehicle()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 08:15:21 --> Undefined array key "	province"
+in APPPATH\Views\customer\edit-vehicle.php on line 106.
+ 1 APPPATH\Views\customer\edit-vehicle.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "	province"', 'APPPATH\\Views\\customer\\edit-vehicle.php', 106)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\edit-vehicle.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('customer/edit-vehicle.php', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(584): view('customer/edit-vehicle.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->edit_vehicle()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:50:57 --> Undefined variable $page_name
+in APPPATH\Views\layouts\site_layout.php on line 178.
+ 1 APPPATH\Views\layouts\site_layout.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page_name', 'APPPATH\\Views\\layouts\\site_layout.php', 178)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\site_layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/site_layout', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('customer/login.php', [], true)
+ 6 APPPATH\Controllers\CustomerController.php(716): view('customer/login.php')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->logout()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 20:52:58 --> Undefined variable $page_name
+in APPPATH\Views\layouts\site_layout.php on line 178.
+ 1 APPPATH\Views\layouts\site_layout.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page_name', 'APPPATH\\Views\\layouts\\site_layout.php', 178)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\site_layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/site_layout', [], true)
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/login.php', [], true)
+ 6 APPPATH\Controllers\StationController.php(786): view('service_station/login.php')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->logout()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 23:54:46 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\CustomerController.php on line 728.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\CustomerController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CustomerController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CustomerController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\CustomerController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 23:55:12 --> Undefined variable $service_station
+in APPPATH\Views\service_station\stations_details.php on line 95.
+ 1 APPPATH\Views\service_station\stations_details.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $service_station', 'APPPATH\\Views\\service_station\\stations_details.php', 95)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\stations_details.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/stations_details', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(717): view('service_station/stations_details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->get_service_stations()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

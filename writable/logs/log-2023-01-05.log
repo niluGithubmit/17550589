@@ -1,0 +1,143 @@
+CRITICAL - 2023-01-05 00:16:21 --> Undefined array key 0
+in APPPATH/Views/service_station/invoice.php on line 54.
+ 1 APPPATH/Views/service_station/invoice.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Views/service_station/invoice.php', 54)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/service_station/invoice.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station/invoice', [], true)
+ 5 APPPATH/Controllers/CustomerController.php(220): view('service_station/invoice')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\CustomerController->print_invoice()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 00:17:34 --> Cannot use [] for reading
+in APPPATH/Views/service_station/invoice.php on line 54.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-05 00:17:35 --> Cannot use [] for reading
+in APPPATH/Views/service_station/invoice.php on line 54.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-05 00:17:36 --> Cannot use [] for reading
+in APPPATH/Views/service_station/invoice.php on line 54.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-05 00:18:17 --> Undefined array key "id"
+in APPPATH/Views/service_station/invoice.php on line 72.
+ 1 APPPATH/Views/service_station/invoice.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH/Views/service_station/invoice.php', 72)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/service_station/invoice.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station/invoice', [], true)
+ 5 APPPATH/Controllers/CustomerController.php(220): view('service_station/invoice')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\CustomerController->print_invoice()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 00:18:22 --> Undefined array key "id"
+in APPPATH/Views/service_station/invoice.php on line 72.
+ 1 APPPATH/Views/service_station/invoice.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH/Views/service_station/invoice.php', 72)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/service_station/invoice.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station/invoice', [], true)
+ 5 APPPATH/Controllers/CustomerController.php(220): view('service_station/invoice')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\CustomerController->print_invoice()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 00:19:45 --> Undefined array key "id"
+in APPPATH/Views/service_station/invoice.php on line 72.
+ 1 APPPATH/Views/service_station/invoice.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH/Views/service_station/invoice.php', 72)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/service_station/invoice.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station/invoice', [], true)
+ 5 APPPATH/Controllers/CustomerController.php(220): view('service_station/invoice')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\CustomerController->print_invoice()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 00:29:57 --> Undefined array key 0
+in APPPATH/Views/service_station/invoice.php on line 54.
+ 1 APPPATH/Views/service_station/invoice.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Views/service_station/invoice.php', 54)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/service_station/invoice.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station/invoice', [], true)
+ 5 APPPATH/Controllers/StationController.php(290): view('service_station/invoice')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 00:50:28 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/CustomerController.php on line 160.
+ 1 APPPATH/Controllers/CustomerController.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/CustomerController.php', 160)
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\CustomerController->customer_appointments()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 11:14:57 --> syntax error, unexpected token "else"
+in APPPATH/Views/service_station.php on line 137.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 3 APPPATH/Controllers/StationController.php(401): view('service_station', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 11:16:11 --> syntax error, unexpected token "else"
+in APPPATH/Views/service_station.php on line 137.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 3 APPPATH/Controllers/StationController.php(401): view('service_station', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 11:16:13 --> syntax error, unexpected token "else"
+in APPPATH/Views/service_station.php on line 137.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 3 APPPATH/Controllers/StationController.php(401): view('service_station', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 11:16:14 --> syntax error, unexpected token "else"
+in APPPATH/Views/service_station.php on line 137.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 3 APPPATH/Controllers/StationController.php(401): view('service_station', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 11:16:21 --> syntax error, unexpected token "else"
+in APPPATH/Views/service_station.php on line 137.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 3 APPPATH/Controllers/StationController.php(401): view('service_station', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 11:16:24 --> syntax error, unexpected token "else"
+in APPPATH/Views/service_station.php on line 137.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 3 APPPATH/Controllers/StationController.php(401): view('service_station', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 11:17:14 --> Unclosed '{' on line 86
+in APPPATH/Views/service_station.php on line 287.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station', [], true)
+ 3 APPPATH/Controllers/StationController.php(401): view('service_station', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->service_station()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 18:55:31 --> syntax error, unexpected token "else"
+in APPPATH/Views/customer/service_history.php on line 235.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('customer/service_history', [], true)
+ 3 APPPATH/Controllers/CustomerController.php(179): view('customer/service_history', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\CustomerController->service_history()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

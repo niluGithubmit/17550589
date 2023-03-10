@@ -1,0 +1,1157 @@
+CRITICAL - 2022-11-21 03:47:56 --> Undefined variable $data
+in APPPATH\Views\service_station\appointments.php on line 90.
+ 1 APPPATH\Views\service_station\appointments.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\service_station\\appointments.php', 90)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\appointments.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/appointments', [], true)
+ 5 APPPATH\Controllers\StationController.php(140): view('service_station/appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 04:55:18 --> Call to undefined method App\Models\appointmentsModel::getMyApointpents
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\StationController.php(143): CodeIgniter\Model->__call('getMyApointpents', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 05:04:10 --> Undefined variable $station_id
+in APPPATH\Models\appointmentsModel.php on line 48.
+ 1 APPPATH\Models\appointmentsModel.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $station_id', 'APPPATH\\Models\\appointmentsModel.php', 48)
+ 2 APPPATH\Controllers\StationController.php(143): App\Models\appointmentsModel->getMyApointpents('15')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->appointments()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-21 05:21:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.cat_name
+FROM appointments
+JOIN vehicle_owners
+  ON appointments.owner_id...' at line 19 in C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT\r\n  appoi...', 0)
+#1 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n  appoi...')
+#2 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n  appoi...')
+#3 C:\xampp\htdocs\service_station2\app\Models\appointmentsModel.php(71): CodeIgniter\Database\BaseConnection->query('SELECT\r\n  appoi...')
+#4 C:\xampp\htdocs\service_station2\app\Controllers\StationController.php(143): App\Models\appointmentsModel->getMyApointpents('15')
+#5 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(927): App\Controllers\StationController->appointments()
+#6 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#7 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\service_station2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-21 05:21:35 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\appointmentsModel.php on line 74.
+ 1 APPPATH\Controllers\StationController.php(143): App\Models\appointmentsModel->getMyApointpents('15')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-21 05:22:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.cat_name
+FROM appointments
+JOIN vehicle_owners
+  ON appointments.owner_id...' at line 19 in C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT\r\n  appoi...', 0)
+#1 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n  appoi...')
+#2 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n  appoi...')
+#3 C:\xampp\htdocs\service_station2\app\Models\appointmentsModel.php(71): CodeIgniter\Database\BaseConnection->query('SELECT\r\n  appoi...')
+#4 C:\xampp\htdocs\service_station2\app\Controllers\StationController.php(143): App\Models\appointmentsModel->getMyApointpents('15')
+#5 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(927): App\Controllers\StationController->appointments()
+#6 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#7 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\service_station2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-21 05:22:57 --> Call to a member function getResult() on bool
+in APPPATH\Models\appointmentsModel.php on line 74.
+ 1 APPPATH\Controllers\StationController.php(143): App\Models\appointmentsModel->getMyApointpents('15')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-21 05:23:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.cat_name
+FROM appointments
+JOIN vehicle_owners
+  ON appointments.owner_id...' at line 19 in C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT\r\n  appoi...', 0)
+#1 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n  appoi...')
+#2 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n  appoi...')
+#3 C:\xampp\htdocs\service_station2\app\Models\appointmentsModel.php(71): CodeIgniter\Database\BaseConnection->query('SELECT\r\n  appoi...')
+#4 C:\xampp\htdocs\service_station2\app\Controllers\StationController.php(143): App\Models\appointmentsModel->getMyApointpents('15')
+#5 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(927): App\Controllers\StationController->appointments()
+#6 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#7 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\service_station2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-21 05:23:29 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\appointmentsModel.php on line 74.
+ 1 APPPATH\Controllers\StationController.php(143): App\Models\appointmentsModel->getMyApointpents('15')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-21 05:24:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.cat_name
+FROM appointments
+JOIN vehicle_owners
+  ON appointments.owner_id...' at line 19 in C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT\r\n  appoi...', 0)
+#1 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n  appoi...')
+#2 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n  appoi...')
+#3 C:\xampp\htdocs\service_station2\app\Models\appointmentsModel.php(46): CodeIgniter\Database\BaseConnection->query('SELECT\r\n  appoi...')
+#4 C:\xampp\htdocs\service_station2\app\Controllers\StationController.php(143): App\Models\appointmentsModel->getMyApointpents('15')
+#5 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(927): App\Controllers\StationController->appointments()
+#6 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#7 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\service_station2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-21 05:24:44 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\appointmentsModel.php on line 74.
+ 1 APPPATH\Controllers\StationController.php(143): App\Models\appointmentsModel->getMyApointpents('15')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 05:36:30 --> Undefined array key "fual_type"
+in APPPATH\Views\service_station\appointments.php on line 165.
+ 1 APPPATH\Views\service_station\appointments.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fual_type"', 'APPPATH\\Views\\service_station\\appointments.php', 165)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\appointments.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/appointments', [], true)
+ 5 APPPATH\Controllers\StationController.php(149): view('service_station/appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 06:14:01 --> Undefined array key "id"
+in APPPATH\Views\service_station\appointments.php on line 181.
+ 1 APPPATH\Views\service_station\appointments.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\service_station\\appointments.php', 181)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\appointments.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/appointments', [], true)
+ 5 APPPATH\Controllers\StationController.php(149): view('service_station/appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 06:18:32 --> Trying to access array offset on value of type null
+in APPPATH\Views\components\admin_nav.php on line 69.
+ 1 APPPATH\Views\components\admin_nav.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\components\\admin_nav.php', 69)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\components\\admin_nav.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('App\\Views\\components\\admin_nav', [], true)
+ 5 APPPATH\Views\layouts\admin_layout2.php(46): view('App\\Views\\components\\admin_nav')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\admin_layout2.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/admin_layout2', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('users/users', [], true)
+10 APPPATH\Controllers\UsersController.php(75): view('users/users', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\UsersController->users()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 06:19:14 --> Trying to access array offset on value of type null
+in APPPATH\Views\components\admin_nav.php on line 69.
+ 1 APPPATH\Views\components\admin_nav.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\components\\admin_nav.php', 69)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\components\\admin_nav.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('App\\Views\\components\\admin_nav', [], true)
+ 5 APPPATH\Views\layouts\admin_layout2.php(46): view('App\\Views\\components\\admin_nav')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layouts\\admin_layout2.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layouts/admin_layout2', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('users/users', [], true)
+10 APPPATH\Controllers\UsersController.php(75): view('users/users', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\UsersController->users()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsersController))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 07:21:51 --> date() expects at least 1 argument, 0 given
+in APPPATH\Views\service_station\complete_service.php on line 112.
+ 1 APPPATH\Views\service_station\complete_service.php(112): date()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(202): view('service_station/complete_service', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 07:25:48 --> Undefined array key "station_name"
+in APPPATH\Views\service_station\complete_service.php on line 116.
+ 1 APPPATH\Views\service_station\complete_service.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "station_name"', 'APPPATH\\Views\\service_station\\complete_service.php', 116)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(202): view('service_station/complete_service', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 07:41:30 --> Undefined array key "brand"
+in APPPATH\Views\service_station\complete_service.php on line 168.
+ 1 APPPATH\Views\service_station\complete_service.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "brand"', 'APPPATH\\Views\\service_station\\complete_service.php', 168)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(202): view('service_station/complete_service', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 07:42:21 --> Undefined array key "model"
+in APPPATH\Views\service_station\complete_service.php on line 173.
+ 1 APPPATH\Views\service_station\complete_service.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "model"', 'APPPATH\\Views\\service_station\\complete_service.php', 173)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(202): view('service_station/complete_service', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:00:53 --> Undefined variable $data
+in APPPATH\Views\service_station\complete_service.php on line 122.
+ 1 APPPATH\Views\service_station\complete_service.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\service_station\\complete_service.php', 122)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(212): view('service_station/complete_service')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:05:43 --> Undefined variable $data
+in APPPATH\Views\service_station\complete_service.php on line 122.
+ 1 APPPATH\Views\service_station\complete_service.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\service_station\\complete_service.php', 122)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(214): view('service_station/complete_service')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:07:20 --> Invalid property: PDF
+in VENDORPATH\dompdf\dompdf\src\Dompdf.php on line 1467.
+ 1 APPPATH\Controllers\StationController.php(215): Dompdf\Dompdf->__get('PDF')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:09:26 --> Undefined property: App\Controllers\StationController::$load
+in APPPATH\Controllers\StationController.php on line 211.
+ 1 APPPATH\Controllers\StationController.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\StationController::$load', 'APPPATH\\Controllers\\StationController.php', 211)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:10:50 --> Undefined variable $data
+in APPPATH\Views\service_station\complete_service.php on line 122.
+ 1 APPPATH\Views\service_station\complete_service.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\service_station\\complete_service.php', 122)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(214): view('service_station/complete_service')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:12:14 --> strtoupper(): Argument #1 ($string) must be of type string, array given
+in VENDORPATH\dompdf\dompdf\src\Dompdf.php on line 434.
+ 1 VENDORPATH\dompdf\dompdf\src\Dompdf.php(434): strtoupper([...])
+ 2 APPPATH\Controllers\StationController.php(214): Dompdf\Dompdf->loadHtml('service_station/complete_service', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:12:26 --> strtoupper(): Argument #1 ($string) must be of type string, array given
+in VENDORPATH\dompdf\dompdf\src\Dompdf.php on line 434.
+ 1 VENDORPATH\dompdf\dompdf\src\Dompdf.php(434): strtoupper([...])
+ 2 VENDORPATH\dompdf\dompdf\src\Dompdf.php(394): Dompdf\Dompdf->loadHtml('service_station/complete_service', [...])
+ 3 APPPATH\Controllers\StationController.php(214): Dompdf\Dompdf->load_html('service_station/complete_service', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:12:39 --> Undefined variable $data
+in APPPATH\Views\service_station\complete_service.php on line 122.
+ 1 APPPATH\Views\service_station\complete_service.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\service_station\\complete_service.php', 122)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(214): view('service_station/complete_service')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:15:25 --> Undefined variable $data
+in APPPATH\Views\service_station\complete_service.php on line 122.
+ 1 APPPATH\Views\service_station\complete_service.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\service_station\\complete_service.php', 122)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(214): view('service_station/complete_service', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:16:05 --> view(): Argument #2 ($data) must be of type array, string given, called in C:\xampp\htdocs\service_station2\app\Controllers\StationController.php on line 215
+in SYSTEMPATH\Common.php on line 1120.
+ 1 APPPATH\Controllers\StationController.php(215): view('service_station/complete_service', 'data')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:17:06 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service_station2/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(226): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:17:58 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service_station2/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(226): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:19:13 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service_station2/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(227): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:19:37 --> Array to string conversion
+in APPPATH\Controllers\StationController.php on line 218.
+ 1 APPPATH\Controllers\StationController.php(218): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\StationController.php', 218)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:19:52 --> Cannot access offset of type string on string
+in APPPATH\Views\service_station\complete_service.php on line 122.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 4 APPPATH\Controllers\StationController.php(218): view('service_station/complete_service', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:20:27 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service_station2/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(227): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:23:52 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service_station2/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(227): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:25:34 --> Undefined array key "request_date"
+in APPPATH\Views\service_station\complete_service.php on line 127.
+ 1 APPPATH\Views\service_station\complete_service.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "request_date"', 'APPPATH\\Views\\service_station\\complete_service.php', 127)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(218): view('service_station/complete_service', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:26:18 --> Undefined array key "id"
+in APPPATH\Views\service_station\complete_service.php on line 122.
+ 1 APPPATH\Views\service_station\complete_service.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\service_station\\complete_service.php', 122)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(218): view('service_station/complete_service', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:29:42 --> Cannot use [] for reading
+in APPPATH\Controllers\StationController.php on line 218.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-21 10:30:07 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service_station2/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(227): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:31:01 --> Undefined array key "request_date"
+in APPPATH\Views\service_station\complete_service.php on line 127.
+ 1 APPPATH\Views\service_station\complete_service.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "request_date"', 'APPPATH\\Views\\service_station\\complete_service.php', 127)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(218): view('service_station/complete_service', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:33:59 --> Cannot use object of type stdClass as array
+in APPPATH\Views\service_station\complete_service.php on line 122.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 4 APPPATH\Controllers\StationController.php(218): view('service_station/complete_service', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:35:05 --> Call to undefined method stdClass::resultArray()
+in APPPATH\Controllers\StationController.php on line 218.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:35:11 --> Cannot use object of type stdClass as array
+in APPPATH\Views\service_station\complete_service.php on line 122.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 4 APPPATH\Controllers\StationController.php(202): view('service_station/complete_service', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:35:16 --> Cannot use object of type stdClass as array
+in APPPATH\Views\service_station\complete_service.php on line 122.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 4 APPPATH\Controllers\StationController.php(202): view('service_station/complete_service', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:35:50 --> Call to a member function resultArray() on array
+in APPPATH\Controllers\StationController.php on line 218.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:35:57 --> Call to undefined method stdClass::resultArray()
+in APPPATH\Controllers\StationController.php on line 218.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:36:24 --> Cannot use object of type stdClass as array
+in APPPATH\Views\service_station\complete_service.php on line 122.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 4 APPPATH\Controllers\StationController.php(218): view('service_station/complete_service', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:37:08 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service_station2/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(227): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:37:46 --> Array to string conversion
+in APPPATH\Controllers\StationController.php on line 212.
+ 1 APPPATH\Controllers\StationController.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\StationController.php', 212)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:38:19 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\StationController.php on line 232.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\StationController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\StationController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\StationController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\StationController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:40:07 --> Undefined variable $data2
+in APPPATH\Controllers\StationController.php on line 211.
+ 1 APPPATH\Controllers\StationController.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data2', 'APPPATH\\Controllers\\StationController.php', 211)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:40:45 --> Undefined variable $data2
+in APPPATH\Controllers\StationController.php on line 212.
+ 1 APPPATH\Controllers\StationController.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data2', 'APPPATH\\Controllers\\StationController.php', 212)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:41:04 --> Illegal offset type
+in APPPATH\Controllers\StationController.php on line 212.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:41:27 --> Illegal offset type
+in APPPATH\Controllers\StationController.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:42:21 --> Array to string conversion
+in APPPATH\Controllers\StationController.php on line 215.
+ 1 APPPATH\Controllers\StationController.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\StationController.php', 215)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:42:35 --> Undefined array key "id"
+in APPPATH\Views\service_station\complete_service.php on line 122.
+ 1 APPPATH\Views\service_station\complete_service.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\service_station\\complete_service.php', 122)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(223): view('service_station/complete_service', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:43:06 --> Cannot use [] for reading
+in APPPATH\Controllers\StationController.php on line 214.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:45:48 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service_station2/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(232): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:46:09 --> Undefined variable $data
+in APPPATH\Views\service_station\complete_service.php on line 122.
+ 1 APPPATH\Views\service_station\complete_service.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\service_station\\complete_service.php', 122)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(221): view('service_station/complete_service', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:46:12 --> Undefined variable $data
+in APPPATH\Views\service_station\complete_service.php on line 122.
+ 1 APPPATH\Views\service_station\complete_service.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\service_station\\complete_service.php', 122)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(221): view('service_station/complete_service', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:46:44 --> Undefined variable $data
+in APPPATH\Views\service_station\complete_service.php on line 122.
+ 1 APPPATH\Views\service_station\complete_service.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\service_station\\complete_service.php', 122)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(221): view('service_station/complete_service', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:47:15 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service_station2/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(232): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:47:41 --> Cannot access offset of type string on string
+in APPPATH\Views\service_station\complete_service.php on line 122.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 4 APPPATH\Controllers\StationController.php(223): view('service_station/complete_service', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:49:54 --> Cannot access offset of type string on string
+in APPPATH\Views\service_station\complete_service.php on line 122.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 4 APPPATH\Controllers\StationController.php(225): view('service_station/complete_service', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:52:36 --> Cannot use [] for reading
+in APPPATH\Controllers\StationController.php on line 222.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-21 10:53:13 --> Undefined variable $data2
+in APPPATH\Controllers\StationController.php on line 226.
+ 1 APPPATH\Controllers\StationController.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data2', 'APPPATH\\Controllers\\StationController.php', 226)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:53:24 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service_station2/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(235): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:53:35 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service_station2/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(235): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:54:03 --> Undefined array key "request_date"
+in APPPATH\Views\service_station\complete_service.php on line 127.
+ 1 APPPATH\Views\service_station\complete_service.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "request_date"', 'APPPATH\\Views\\service_station\\complete_service.php', 127)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(226): view('service_station/complete_service', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:54:58 --> Undefined array key "id"
+in APPPATH\Views\service_station\complete_service.php on line 122.
+ 1 APPPATH\Views\service_station\complete_service.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Views\\service_station\\complete_service.php', 122)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(226): view('service_station/complete_service', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:55:23 --> syntax error, unexpected token "=", expecting "("
+in APPPATH\Controllers\StationController.php on line 222.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\StationController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\StationController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\StationController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\StationController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:57:12 --> view(): Argument #3 ($options) must be of type array, bool given, called in C:\xampp\htdocs\service_station2\app\Controllers\StationController.php on line 227
+in SYSTEMPATH\Common.php on line 1120.
+ 1 APPPATH\Controllers\StationController.php(227): view('service_station/complete_service', [...], true)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 10:57:52 --> view(): Argument #3 ($options) must be of type array, bool given, called in C:\xampp\htdocs\service_station2\app\Controllers\StationController.php on line 222
+in SYSTEMPATH\Common.php on line 1120.
+ 1 APPPATH\Controllers\StationController.php(222): view('service_station/complete_service', [...], true)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:02:20 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service_station2/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(233): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:02:34 --> Undefined variable $data
+in APPPATH\Views\service_station\complete_service.php on line 122.
+ 1 APPPATH\Views\service_station\complete_service.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\service_station\\complete_service.php', 122)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(222): view('service_station/complete_service')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:02:50 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service_station2/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(233): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:04:26 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service_station2/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(235): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:08:51 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service_station2/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(230): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:09:07 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service_station2/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(230): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:09:45 --> Undefined variable $appointmentsModel
+in APPPATH\Controllers\StationController.php on line 212.
+ 1 APPPATH\Controllers\StationController.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $appointmentsModel', 'APPPATH\\Controllers\\StationController.php', 212)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:10:02 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service_station2/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(219): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:11:25 --> trim(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Views\service_station\complete_service.php on line 55.
+ 1 APPPATH\Views\service_station\complete_service.php(55): trim([...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(214): view('service_station/complete_service')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:11:51 --> Undefined variable $data
+in APPPATH\Views\service_station\complete_service.php on line 167.
+ 1 APPPATH\Views\service_station\complete_service.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\service_station\\complete_service.php', 167)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(214): view('service_station/complete_service')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:12:00 --> Undefined variable $data
+in APPPATH\Views\service_station\complete_service.php on line 167.
+ 1 APPPATH\Views\service_station\complete_service.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\service_station\\complete_service.php', 167)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(214): view('service_station/complete_service')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:13:50 --> Undefined variable $data
+in APPPATH\Views\service_station\complete_service.php on line 167.
+ 1 APPPATH\Views\service_station\complete_service.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\service_station\\complete_service.php', 167)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(214): view('service_station/complete_service')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:13:59 --> trim(): Argument #1 ($string) must be of type string, array given
+in APPPATH\Views\service_station\complete_service.php on line 55.
+ 1 APPPATH\Views\service_station\complete_service.php(55): trim([...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(214): view('service_station/complete_service')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:14:13 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service_station2/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(219): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:20:15 --> Undefined variable $data
+in APPPATH\Views\service_station\complete_service.php on line 172.
+ 1 APPPATH\Views\service_station\complete_service.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\service_station\\complete_service.php', 172)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(214): view('service_station/complete_service')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:20:54 --> Undefined variable $data
+in APPPATH\Views\service_station\complete_service.php on line 167.
+ 1 APPPATH\Views\service_station\complete_service.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\service_station\\complete_service.php', 167)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(214): view('service_station/complete_service')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:20:59 --> Undefined variable $data
+in APPPATH\Views\service_station\complete_service.php on line 167.
+ 1 APPPATH\Views\service_station\complete_service.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\service_station\\complete_service.php', 167)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(214): view('service_station/complete_service')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:21:16 --> preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated
+in VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php on line 1481.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_match_all(): Passing null to parameter #2 ($subject) of type string is deprecated', 'VENDORPATH\\dompdf\\dompdf\\src\\Css\\Stylesheet.php', 1481)
+ 2 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1481): preg_match_all('/(url|local)\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\)\\s*(format\\s*\\(\\s*["\\\']?([^"\\\'\\)]+)["\\\']?\\s*\\))?/i', null, null)
+ 3 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(1365): Dompdf\Css\Stylesheet->_parse_font_face('font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')')
+ 4 VENDORPATH\dompdf\dompdf\src\Css\Stylesheet.php(367): Dompdf\Css\Stylesheet->_parse_css('@font-face{font-family:src:local(\'RobotoDraft\'),local(\'RobotoDraft-Regular\'),local(\'Roboto-Regular\'),url(../fonts/RobotoDraftRegular.woff2) format(\'woff2\'),url(../fonts/RobotoDraftRegular.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:500;src:local(\'RobotoDraft Medium\'),local(\'RobotoDraft-Medium\'),local(\'Roboto-Medium\'),url(../fonts/RobotoDraftMedium.woff2) format(\'woff2\'),url(../fonts/RobotoDraftMedium.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-weight:700;src:local(\'RobotoDraft Bold\'),local(\'RobotoDraft-Bold\'),local(\'Roboto-Bold\'),url(../fonts/RobotoDraftBold.woff2) format(\'woff2\'),url(../fonts/RobotoDraftBold.woff) format(\'woff\')}@font-face{font-family:RobotoDraft;font-style:italic;src:local(\'RobotoDraft Italic\'),local(\'RobotoDraft-Italic\'),local(\'Roboto-Italic\'),url(../fonts/RobotoDraftItalic.woff2) format(\'woff2\'),url(../fonts/RobotoDraftItalic.woff) format(\'woff\')}
+/*# sourceMappingURL=roboto.min.css.map */')
+ 5 VENDORPATH\dompdf\dompdf\src\Dompdf.php(581): Dompdf\Css\Stylesheet->load_css_file('http://localhost/service_station2/public/css/roboto.min.css', 3)
+ 6 VENDORPATH\dompdf\dompdf\src\Dompdf.php(693): Dompdf\Dompdf->processHtml()
+ 7 APPPATH\Controllers\StationController.php(219): Dompdf\Dompdf->render()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:23:12 --> Undefined variable $data
+in APPPATH\Views\service_station\invoice.php on line 14.
+ 1 APPPATH\Views\service_station\invoice.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\service_station\\invoice.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\invoice.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/invoice', [], true)
+ 5 APPPATH\Controllers\StationController.php(214): view('service_station/invoice')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 11:26:02 --> Object of class Dompdf\Dompdf could not be converted to string
+in APPPATH\Controllers\StationController.php on line 220.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->print_invoice()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 21:44:29 --> Undefined constant "data"
+in APPPATH\Views\service_station\complete_service.php on line 236.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 4 APPPATH\Controllers\StationController.php(204): view('service_station/complete_service', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 21:45:00 --> Undefined array key "id as v_id"
+in APPPATH\Views\service_station\complete_service.php on line 245.
+ 1 APPPATH\Views\service_station\complete_service.php(245): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id as v_id"', 'APPPATH\\Views\\service_station\\complete_service.php', 245)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(204): view('service_station/complete_service', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 22:17:35 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Models\complete_serviceModel.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-21 22:58:14 --> Undefined variable $data
+in APPPATH\Controllers\CustomerController.php on line 175.
+ 1 APPPATH\Controllers\CustomerController.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\CustomerController.php', 175)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->customer_appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 23:01:23 --> Undefined array key "station_name"
+in APPPATH\Views\customer\my_appointments.php on line 132.
+ 1 APPPATH\Views\customer\my_appointments.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "station_name"', 'APPPATH\\Views\\customer\\my_appointments.php', 132)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('customer/my_appointments', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(176): view('customer/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->customer_appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 23:04:54 --> Undefined array key "contact"
+in APPPATH\Views\customer\my_appointments.php on line 144.
+ 1 APPPATH\Views\customer\my_appointments.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contact"', 'APPPATH\\Views\\customer\\my_appointments.php', 144)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('customer/my_appointments', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(176): view('customer/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->customer_appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 23:05:49 --> Undefined array key "vehicle_type"
+in APPPATH\Views\customer\my_appointments.php on line 151.
+ 1 APPPATH\Views\customer\my_appointments.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "vehicle_type"', 'APPPATH\\Views\\customer\\my_appointments.php', 151)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('customer/my_appointments', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(176): view('customer/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->customer_appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-21 23:06:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM appointments
+JOIN service_stations
+  ON appointments.station_id = serv...' at line 27 in C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT\r\n  appoi...', 0)
+#1 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n  appoi...')
+#2 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n  appoi...')
+#3 C:\xampp\htdocs\service_station2\app\Models\appointmentsModel.php(123): CodeIgniter\Database\BaseConnection->query('SELECT\r\n  appoi...')
+#4 C:\xampp\htdocs\service_station2\app\Controllers\CustomerController.php(171): App\Models\appointmentsModel->getCustomerAppointment('1')
+#5 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(927): App\Controllers\CustomerController->customer_appointments()
+#6 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+#7 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\service_station2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-21 23:06:53 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\appointmentsModel.php on line 126.
+ 1 APPPATH\Controllers\CustomerController.php(171): App\Models\appointmentsModel->getCustomerAppointment('1')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->customer_appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-21 23:07:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM appointments
+JOIN service_stations
+  ON appointments.station_id = serv...' at line 27 in C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT\r\n  appoi...', 0)
+#1 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n  appoi...')
+#2 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n  appoi...')
+#3 C:\xampp\htdocs\service_station2\app\Models\appointmentsModel.php(123): CodeIgniter\Database\BaseConnection->query('SELECT\r\n  appoi...')
+#4 C:\xampp\htdocs\service_station2\app\Controllers\CustomerController.php(171): App\Models\appointmentsModel->getCustomerAppointment('1')
+#5 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(927): App\Controllers\CustomerController->customer_appointments()
+#6 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+#7 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\service_station2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-21 23:07:42 --> Call to a member function getResult() on bool
+in APPPATH\Models\appointmentsModel.php on line 126.
+ 1 APPPATH\Controllers\CustomerController.php(171): App\Models\appointmentsModel->getCustomerAppointment('1')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->customer_appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-21 23:08:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM appointments
+JOIN service_stations
+  ON appointments.station_id = serv...' at line 13 in C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\service_station2\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT\r\n  appoi...', 0)
+#1 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n  appoi...')
+#2 C:\xampp\htdocs\service_station2\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n  appoi...')
+#3 C:\xampp\htdocs\service_station2\app\Models\appointmentsModel.php(109): CodeIgniter\Database\BaseConnection->query('SELECT\r\n  appoi...')
+#4 C:\xampp\htdocs\service_station2\app\Controllers\CustomerController.php(171): App\Models\appointmentsModel->getCustomerAppointment('1')
+#5 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(927): App\Controllers\CustomerController->customer_appointments()
+#6 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+#7 C:\xampp\htdocs\service_station2\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\service_station2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-21 23:08:18 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\appointmentsModel.php on line 112.
+ 1 APPPATH\Controllers\CustomerController.php(171): App\Models\appointmentsModel->getCustomerAppointment('1')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->customer_appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 23:22:08 --> Undefined variable $appointmentsModel
+in APPPATH\Controllers\StationController.php on line 250.
+ 1 APPPATH\Controllers\StationController.php(250): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $appointmentsModel', 'APPPATH\\Controllers\\StationController.php', 250)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service_add()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 23:42:12 --> Undefined array key "OwnerData"
+in APPPATH\Views\customer\my_appointments.php on line 190.
+ 1 APPPATH\Views\customer\my_appointments.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "OwnerData"', 'APPPATH\\Views\\customer\\my_appointments.php', 190)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('customer/my_appointments', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(176): view('customer/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->customer_appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 23:44:25 --> Undefined array key "station_id"
+in APPPATH\Views\customer\my_appointments.php on line 190.
+ 1 APPPATH\Views\customer\my_appointments.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "station_id"', 'APPPATH\\Views\\customer\\my_appointments.php', 190)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('customer/my_appointments', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(176): view('customer/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->customer_appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 23:45:04 --> Undefined array key "station_id"
+in APPPATH\Views\customer\my_appointments.php on line 190.
+ 1 APPPATH\Views\customer\my_appointments.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "station_id"', 'APPPATH\\Views\\customer\\my_appointments.php', 190)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\customer\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('customer/my_appointments', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(176): view('customer/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\CustomerController->customer_appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 23:57:51 --> Undefined array key "service_stationData"
+in APPPATH\Views\service_station\complete_service.php on line 177.
+ 1 APPPATH\Views\service_station\complete_service.php(177): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "service_stationData"', 'APPPATH\\Views\\service_station\\complete_service.php', 177)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\service_station\\complete_service.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH\Controllers\StationController.php(207): view('service_station/complete_service', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

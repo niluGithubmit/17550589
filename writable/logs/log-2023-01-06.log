@@ -1,0 +1,439 @@
+ERROR - 2023-01-06 02:21:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.price
+FROM appointments
+JOIN vehicle_owners
+  ON appointments.owner_id = ...' at line 21 in /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT\r\n  appoi...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n  appoi...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n  appoi...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/service/app/Models/appointmentsModel.php(164): CodeIgniter\Database\BaseConnection->query('SELECT\r\n  appoi...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/service/app/Controllers/StationController.php(220): App\Models\appointmentsModel->getCompleteAppointment('11')
+#5 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+#6 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#7 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/service/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-06 02:21:07 --> Call to a member function getResultArray() on bool
+in APPPATH/Models/appointmentsModel.php on line 167.
+ 1 APPPATH/Controllers/StationController.php(220): App\Models\appointmentsModel->getCompleteAppointment('11')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 02:26:50 --> syntax error, unexpected identifier "Model", expecting "{"
+in APPPATH/Models/subscription_paymentsModel.php on line 5.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Models/subscription_paymentsModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\subscription_paymentsModel')
+ 3 APPPATH/Controllers/StationController.php(644): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\subscription_paymentsModel')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 02:42:28 --> syntax error, unexpected identifier "Model", expecting "{"
+in APPPATH/Models/subscription_paymentsModel.php on line 5.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Models/subscription_paymentsModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\subscription_paymentsModel')
+ 3 APPPATH/Controllers/StationController.php(644): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\subscription_paymentsModel')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-06 04:24:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.price
+FROM appointments
+JOIN vehicle_owners
+  ON appointments.owner_id = ...' at line 21 in /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT\r\n  appoi...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n  appoi...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n  appoi...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/service/app/Models/appointmentsModel.php(164): CodeIgniter\Database\BaseConnection->query('SELECT\r\n  appoi...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/service/app/Controllers/StationController.php(220): App\Models\appointmentsModel->getCompleteAppointment('11')
+#5 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+#6 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#7 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/service/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-06 04:24:52 --> Call to a member function getResultArray() on bool
+in APPPATH/Models/appointmentsModel.php on line 167.
+ 1 APPPATH/Controllers/StationController.php(220): App\Models\appointmentsModel->getCompleteAppointment('11')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-06 04:27:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.price
+FROM appointments
+JOIN vehicle_owners
+  ON appointments.owner_id = ...' at line 21 in /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT\r\n  appoi...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n  appoi...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n  appoi...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/service/app/Models/appointmentsModel.php(164): CodeIgniter\Database\BaseConnection->query('SELECT\r\n  appoi...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/service/app/Controllers/StationController.php(220): App\Models\appointmentsModel->getCompleteAppointment('11')
+#5 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+#6 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#7 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/service/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-06 04:27:27 --> Call to a member function getResultArray() on bool
+in APPPATH/Models/appointmentsModel.php on line 167.
+ 1 APPPATH/Controllers/StationController.php(220): App\Models\appointmentsModel->getCompleteAppointment('11')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-06 04:27:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.price
+FROM appointments
+JOIN vehicle_owners
+  ON appointments.owner_id = ...' at line 21 in /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT\r\n  appoi...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n  appoi...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n  appoi...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/service/app/Models/appointmentsModel.php(164): CodeIgniter\Database\BaseConnection->query('SELECT\r\n  appoi...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/service/app/Controllers/StationController.php(220): App\Models\appointmentsModel->getCompleteAppointment('11')
+#5 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+#6 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#7 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/service/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-06 04:27:28 --> Call to a member function getResultArray() on bool
+in APPPATH/Models/appointmentsModel.php on line 167.
+ 1 APPPATH/Controllers/StationController.php(220): App\Models\appointmentsModel->getCompleteAppointment('11')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-06 04:27:29 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.price
+FROM appointments
+JOIN vehicle_owners
+  ON appointments.owner_id = ...' at line 21 in /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT\r\n  appoi...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n  appoi...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n  appoi...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/service/app/Models/appointmentsModel.php(164): CodeIgniter\Database\BaseConnection->query('SELECT\r\n  appoi...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/service/app/Controllers/StationController.php(220): App\Models\appointmentsModel->getCompleteAppointment('11')
+#5 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+#6 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#7 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/service/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-06 04:27:29 --> Call to a member function getResultArray() on bool
+in APPPATH/Models/appointmentsModel.php on line 167.
+ 1 APPPATH/Controllers/StationController.php(220): App\Models\appointmentsModel->getCompleteAppointment('11')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-06 04:28:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN station_category ON appointments.station_id= station_category.station_id...' at line 25 in /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT\r\n  appoi...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n  appoi...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n  appoi...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/service/app/Models/appointmentsModel.php(164): CodeIgniter\Database\BaseConnection->query('SELECT\r\n  appoi...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/service/app/Controllers/StationController.php(220): App\Models\appointmentsModel->getCompleteAppointment('11')
+#5 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+#6 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#7 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/service/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-06 04:28:27 --> Call to a member function getResultArray() on bool
+in APPPATH/Models/appointmentsModel.php on line 166.
+ 1 APPPATH/Controllers/StationController.php(220): App\Models\appointmentsModel->getCompleteAppointment('11')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-06 04:28:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'JOIN station_category ON appointments.station_id= station_category.station_id...' at line 25 in /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT\r\n  appoi...', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\r\n  appoi...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/service/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\r\n  appoi...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/service/app/Models/appointmentsModel.php(164): CodeIgniter\Database\BaseConnection->query('SELECT\r\n  appoi...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/service/app/Controllers/StationController.php(220): App\Models\appointmentsModel->getCompleteAppointment('11')
+#5 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+#6 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+#7 /Applications/XAMPP/xamppfiles/htdocs/service/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/XAMPP/xamppfiles/htdocs/service/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-06 04:28:28 --> Call to a member function getResultArray() on bool
+in APPPATH/Models/appointmentsModel.php on line 166.
+ 1 APPPATH/Controllers/StationController.php(220): App\Models\appointmentsModel->getCompleteAppointment('11')
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 04:29:45 --> Call to undefined method App\Models\appointmentsModel::getCompleteAppointment
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/StationController.php(220): CodeIgniter\Model->__call('getCompleteAppointment', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 04:29:46 --> Call to undefined method App\Models\appointmentsModel::getCompleteAppointment
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/StationController.php(220): CodeIgniter\Model->__call('getCompleteAppointment', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 04:29:46 --> Call to undefined method App\Models\appointmentsModel::getCompleteAppointment
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/StationController.php(220): CodeIgniter\Model->__call('getCompleteAppointment', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 04:30:05 --> Call to undefined method App\Models\appointmentsModel::getMyAppointments
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/StationController.php(146): CodeIgniter\Model->__call('getMyAppointments', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->appointments()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 04:30:08 --> Call to undefined method App\Models\appointmentsModel::getMyAppointments
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/StationController.php(146): CodeIgniter\Model->__call('getMyAppointments', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->appointments()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 04:30:53 --> Call to undefined method App\Models\appointmentsModel::getMyAppointments
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/StationController.php(146): CodeIgniter\Model->__call('getMyAppointments', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->appointments()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 04:30:57 --> Call to undefined method App\Models\appointmentsModel::getMyAppointments
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/StationController.php(146): CodeIgniter\Model->__call('getMyAppointments', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->appointments()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 04:30:58 --> Call to undefined method App\Models\appointmentsModel::getMyAppointments
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/StationController.php(146): CodeIgniter\Model->__call('getMyAppointments', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->appointments()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 04:36:08 --> Call to undefined method App\Models\appointmentsModel::getMyAppointments
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/StationController.php(146): CodeIgniter\Model->__call('getMyAppointments', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->appointments()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 04:36:09 --> Call to undefined method App\Models\appointmentsModel::getMyAppointments
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/StationController.php(146): CodeIgniter\Model->__call('getMyAppointments', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->appointments()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 04:36:10 --> Call to undefined method App\Models\appointmentsModel::getMyAppointments
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/StationController.php(146): CodeIgniter\Model->__call('getMyAppointments', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->appointments()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 04:36:46 --> Call to undefined method App\Models\appointmentsModel::getCompleteAppointment
+in SYSTEMPATH/Model.php on line 774.
+ 1 APPPATH/Controllers/StationController.php(220): CodeIgniter\Model->__call('getCompleteAppointment', [...])
+ 2 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 3 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 4 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 04:43:56 --> Undefined variable $data2
+in APPPATH/Views/service_station/complete_service.php on line 251.
+ 1 APPPATH/Views/service_station/complete_service.php(251): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data2', 'APPPATH/Views/service_station/complete_service.php', 251)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/service_station/complete_service.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH/Controllers/StationController.php(225): view('service_station/complete_service', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 04:43:58 --> Undefined variable $data2
+in APPPATH/Views/service_station/complete_service.php on line 251.
+ 1 APPPATH/Views/service_station/complete_service.php(251): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data2', 'APPPATH/Views/service_station/complete_service.php', 251)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/service_station/complete_service.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH/Controllers/StationController.php(225): view('service_station/complete_service', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 04:44:47 --> Undefined variable $data2
+in APPPATH/Views/service_station/complete_service.php on line 251.
+ 1 APPPATH/Views/service_station/complete_service.php(251): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data2', 'APPPATH/Views/service_station/complete_service.php', 251)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/service_station/complete_service.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service', [], true)
+ 5 APPPATH/Controllers/StationController.php(225): view('service_station/complete_service', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->complete_service()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 06:37:28 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH/Controllers/SparePartsController.php on line 105.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/SparePartsController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SparePartsController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SparePartsController')
+ 4 SYSTEMPATH/CodeIgniter.php(877): class_exists('\\App\\Controllers\\SparePartsController', true)
+ 5 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 06:38:07 --> Undefined array key "Updated Date"
+in APPPATH/Views/spare_part/index.php on line 199.
+ 1 APPPATH/Views/spare_part/index.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Updated Date"', 'APPPATH/Views/spare_part/index.php', 199)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/spare_part/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('spare_part/index', [], true)
+ 5 APPPATH/Controllers/SparePartsController.php(58): view('spare_part/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\SparePartsController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SparePartsController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 06:39:56 --> Undefined array key "Update_date"
+in APPPATH/Views/spare_part/index.php on line 199.
+ 1 APPPATH/Views/spare_part/index.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Update_date"', 'APPPATH/Views/spare_part/index.php', 199)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/spare_part/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('spare_part/index', [], true)
+ 5 APPPATH/Controllers/SparePartsController.php(58): view('spare_part/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\SparePartsController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SparePartsController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 06:39:57 --> Undefined array key "Update_date"
+in APPPATH/Views/spare_part/index.php on line 199.
+ 1 APPPATH/Views/spare_part/index.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Update_date"', 'APPPATH/Views/spare_part/index.php', 199)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/spare_part/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('spare_part/index', [], true)
+ 5 APPPATH/Controllers/SparePartsController.php(58): view('spare_part/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\SparePartsController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SparePartsController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 06:40:20 --> Undefined array key "update_date"
+in APPPATH/Views/spare_part/index.php on line 199.
+ 1 APPPATH/Views/spare_part/index.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "update_date"', 'APPPATH/Views/spare_part/index.php', 199)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/spare_part/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('spare_part/index', [], true)
+ 5 APPPATH/Controllers/SparePartsController.php(58): view('spare_part/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\SparePartsController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SparePartsController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 06:40:20 --> Undefined array key "update_date"
+in APPPATH/Views/spare_part/index.php on line 199.
+ 1 APPPATH/Views/spare_part/index.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "update_date"', 'APPPATH/Views/spare_part/index.php', 199)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/spare_part/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('spare_part/index', [], true)
+ 5 APPPATH/Controllers/SparePartsController.php(58): view('spare_part/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\SparePartsController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SparePartsController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 06:40:21 --> Undefined array key "update_date"
+in APPPATH/Views/spare_part/index.php on line 199.
+ 1 APPPATH/Views/spare_part/index.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "update_date"', 'APPPATH/Views/spare_part/index.php', 199)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/spare_part/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('spare_part/index', [], true)
+ 5 APPPATH/Controllers/SparePartsController.php(58): view('spare_part/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\SparePartsController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SparePartsController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 06:40:21 --> Undefined array key "update_date"
+in APPPATH/Views/spare_part/index.php on line 199.
+ 1 APPPATH/Views/spare_part/index.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "update_date"', 'APPPATH/Views/spare_part/index.php', 199)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/spare_part/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('spare_part/index', [], true)
+ 5 APPPATH/Controllers/SparePartsController.php(58): view('spare_part/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\SparePartsController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SparePartsController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 06:40:21 --> Undefined array key "update_date"
+in APPPATH/Views/spare_part/index.php on line 199.
+ 1 APPPATH/Views/spare_part/index.php(199): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "update_date"', 'APPPATH/Views/spare_part/index.php', 199)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/spare_part/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('spare_part/index', [], true)
+ 5 APPPATH/Controllers/SparePartsController.php(58): view('spare_part/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\SparePartsController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SparePartsController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 09:39:26 --> Unsupported operand types: int + string
+in APPPATH/Views/service_station/complete_service_report.php on line 58.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 4 APPPATH/Controllers/StationController.php(815): view('service_station/complete_service_report', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 09:40:20 --> Unsupported operand types: int + string
+in APPPATH/Views/service_station/complete_service_report.php on line 58.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 4 APPPATH/Controllers/StationController.php(815): view('service_station/complete_service_report', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 09:46:09 --> Unsupported operand types: int + string
+in APPPATH/Views/service_station/complete_service_report.php on line 58.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station/complete_service_report', [], true)
+ 4 APPPATH/Controllers/StationController.php(815): view('service_station/complete_service_report', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->complete_service_report()
+ 6 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 11:38:25 --> Undefined array key 0
+in APPPATH/Views/service_station/invoice.php on line 53.
+ 1 APPPATH/Views/service_station/invoice.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Views/service_station/invoice.php', 53)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/service_station/invoice.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('service_station/invoice', [], true)
+ 5 APPPATH/Controllers/CustomerController.php(214): view('service_station/invoice')
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\CustomerController->print_invoice()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 18:32:55 --> syntax error, unexpected identifier "Model", expecting "{"
+in APPPATH/Models/subscription_paymentsModel.php on line 5.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Models/subscription_paymentsModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\subscription_paymentsModel')
+ 3 APPPATH/Controllers/StationController.php(639): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\subscription_paymentsModel')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-06 18:34:25 --> syntax error, unexpected identifier "Model", expecting "{"
+in APPPATH/Models/subscription_paymentsModel.php on line 5.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Models/subscription_paymentsModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\subscription_paymentsModel')
+ 3 APPPATH/Controllers/StationController.php(639): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\subscription_paymentsModel')
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\StationController->add_subcription()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StationController))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
